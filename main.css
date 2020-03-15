@@ -13,10 +13,10 @@ body{
 }
 .btn{
     background: none;
-    border: 2px solid #000;
+    border: 1px solid #fff;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    padding: 12px 20px;
+    padding: 15px 25px;
     min-width: 200px;
     margin: 10px;
     cursor: pointer;
