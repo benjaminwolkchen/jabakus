@@ -47,7 +47,7 @@ console.log("shuffled array.");
 
 aufgabe = numA[0] * numA[1];
 
-loesung = prompt(numA[0]+" * "+ numA[1] + "Was ist die Lösung?");
+loesung = prompt(numA[0]+" * "+ numA[1] + " Was ist die Lösung?");
 
 // Check if the player solved the polynomdivision.
     if(aufgabe == loesung){
@@ -89,7 +89,7 @@ console.log("shuffled array.");
 // Get ready
 
 aufgabe = numB[0] * numB[1];
-loesung = prompt(numB[0]+" * "+ numB[1]+"Was ist die Lösung?");
+loesung = prompt(numB[0]+" * "+ numB[1]+" Was ist die Lösung?");
 
 // Check if 'aufgabe' eqals 'loesung'
     if(aufgabe == loesung){
