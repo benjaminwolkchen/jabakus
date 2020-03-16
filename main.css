@@ -16,7 +16,7 @@ body{
     margin: 10px;
     cursor: pointer;
     transition: color 0.4s linear;  
-    color: #696969;
+    color: pink;
 }
 .btn:hover{
      color: #fff; 
