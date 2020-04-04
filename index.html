@@ -9,9 +9,16 @@
     <link rel="shortcut icon" type="image/png" href="https://benjaminwolkchen.github.io/1o1/favicon.png"/>
 </head>
 <body>
-    <div id="text" v-on:click="start">
+    <div id="text">
         {{ message }}
+        <br>
     </div>
+    <br>
+    <br>
+    <div id="TextBox">
+    <input v-model="textBox1" placeholder=""><br>
+    </div>
+    <br>
     <br>
     <button id="startBtn" v-on:click="start()">{{ message }}</button>
 
