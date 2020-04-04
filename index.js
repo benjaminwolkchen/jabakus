@@ -21,6 +21,7 @@ var vueButton = new Vue({
     },
     methods: {
         start: function (){
+
             if(textBox.textBox1 == CTask){console.log("success")}
 
             tmp =  Math.floor(Math.random() * 11);
@@ -42,4 +43,9 @@ var textBox = new Vue({
     data: {
       textBox1: 0,
     },
+    methods: {
+        check: function () {
+            
+        } // End function check
+    } // End methods
 })
