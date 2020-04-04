@@ -1,39 +1,21 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>1o1</title>
 
-    <!-- Import Fonts and Styles -->
-    <link rel="stylesheet" href="./main.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
-   
-
-    <title>Just a simple 1*1 Game</title>
-
-<link rel="shortcut icon" href="https://benjaminwolkchen.github.io/1o1/favicon.png" type="image/png" />
+    <link rel="shortcut icon" type="image/png" href="/.png"/>
+    <link rel="shortcut icon" type="image/png" href="https://benjaminwolkchen.github.io/1o1/favicon.png"/>
 </head>
 <body>
-    <h1 class="title" align="center">Just a simple 1*1 Game</h1> <br>
-    <div class="middle" align=""><button onclick="javascript:starteasy()" class="btn">Start! (Easy Mode)</button> <br> <br> <br>
-    
-        <button onclick="javascript:starthard()" class="btn">Start! (Hard Mode)</button></div>
-<br>
-<br>
-<br>
-<p class="text">Easy Mode:</p>
-<p class="text">Du verlierst keine Punkte, wenn du etwas falsch machst.</p>
-<br>
-<p class="text">Hardmode:</p>
-<p class="text">Wenn du im Hardmode eine Aufgabe falsch machst, verlierst du einen Punkt.</p>
-<p class="text">Wenn du keine Punkte mehr hast, verlierst du.</p>
-<br>
-<br>
-<br>
-<div class="footer"><p>Made with <i class="em em-heart"></i> by <a href="https://awesomebible.de">Benjamin Wölkchen</a>.</p>
-<p>© 2020 Benjamin Wölkchen</p></div>
-<script src="./main.min.js"></script>
+    <div id="text" v-on:click="start">
+        {{ message }}
+    </div>
+    <br>
+    <button id="startBtn" v-on:click="start()">{{ message }}</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script defer src="index.js"></script>
 </body>
 </html>
