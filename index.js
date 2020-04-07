@@ -94,3 +94,8 @@ var vueResetBtn = new Vue({
         } // End reset function
     } // end vueResetBtn methods
 }) // End vueResetBtn
+
+// Focus Btn method
+function focusBtn(){
+    document.getElementById("startBtn").focus();
+}
