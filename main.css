@@ -19,13 +19,14 @@ button{
     background-color: #ef959d;
     padding: 15px 32px;
     text-align: center;
+    font-size: large;
 }
 
 #textinput{
     padding: 20px 37px;
     text-align: center;
     width: 90%;
-    font-size: ;
+    font-size: large;
 }
 
 /* Center all elements with that class */
@@ -33,5 +34,4 @@ button{
     margin: auto;
     width: 60%;
     padding: 10px;
-
 }
