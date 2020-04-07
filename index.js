@@ -30,9 +30,9 @@ var vueButton = new Vue({
                 textDisplay.message = "Herzlichen Glückwunsch, du hast die Aufgabe richtig gelöst!"
                 score++;
                 beRight = false;
-                setTimeout(() => {
-                    
-                }, 2000);
+
+                // set scoreboard
+                vueScoreBoard.scoreboard = "Du hast die Aufgabe \""+tmp+" mal "+tmp2+" = "+CTask+"\" richtig gelöst! \n" + "\nDein Score ist "+score+"";
             }else{
 
             tmp =  Math.floor(Math.random() * 11);
@@ -54,4 +54,12 @@ var textBox = new Vue({
     data: {
       textBox1: 0,
     },
+})
+
+// vue component that powers the scoreboard
+var vueScoreBoard = new Vue({
+    el: "#scoreboard",
+    data:{
+        scoreboard: '',
+    } // End data
 })
