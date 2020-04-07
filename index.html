@@ -5,23 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1o1</title>
 
-    <link rel="shortcut icon" type="image/png" href="/.png"/>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
     <link rel="shortcut icon" type="image/png" href="https://benjaminwolkchen.github.io/1o1/favicon.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div id="text">
-        {{ message }}
+    <main class="center">
+        <h1 id="text">
+            {{ message }}
+            <br>
+        </h1>
         <br>
-    </div>
-    <br>
-    <br>
-    <div id="TextBox">
-    <input v-model="textBox1" placeholder=""><br>
-    </div>
-    <br>
-    <br>
-    <button id="startBtn" v-on:click="start()">{{ message }}</button>
-
+        <br>
+        <div id="TextBox">
+        <input v-model="textBox1" placeholder="" id="textinput"><br>
+        <br>
+        </div>
+        <br>
+        <br>
+        <button id="startBtn" v-on:click="start()">{{ message }}</button>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script defer src="index.js"></script>
 </body>

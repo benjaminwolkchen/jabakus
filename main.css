@@ -1,0 +1,37 @@
+/* Remove browser default stylings */
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    }
+
+html{ 
+    background-color: #b8d8ba;
+}
+
+#text{
+    font-family: 'Roboto', sans-serif;
+}
+
+button{
+    border: none;
+    color: black;
+    background-color: #ef959d;
+    padding: 15px 32px;
+    text-align: center;
+}
+
+#textinput{
+    padding: 20px 37px;
+    text-align: center;
+    width: 90%;
+    font-size: ;
+}
+
+/* Center all elements with that class */
+.center{
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+
+}
