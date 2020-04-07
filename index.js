@@ -2,6 +2,7 @@ var tmp;
 var tmp2;
 var CTask;
 var score = 0;
+var scoreTolerance = 10;
 var beRight;
 
 // import score
@@ -17,9 +18,6 @@ var textDisplay = new Vue({
       message: "Willkommen zu Jabacus, einem simplen Einmaleins Spiel.",
     },
 })
-
-// Vue component that provides the input form logic
-
 
 // vue component that makes the button to what it is
 var vueButton = new Vue({
@@ -43,6 +41,13 @@ var vueButton = new Vue({
 
                 // set scoreboard
                 vueScoreBoard.scoreboard = "Du hast die Aufgabe \""+tmp+" mal "+tmp2+" = "+CTask+"\" richtig gelöst! \n" + "\nDein Score ist "+score+"";
+
+                // set highscore
+                if(scoreTolerance == score){
+                    vueScoreBoard.scoreboard = "Du hast einen neuen Highscore! Dein Highscore ist: "+score+".";
+                    scoreTolerance+10;
+                    console.log("New ScoreTolerance: "+scoreTolerance+".")
+                }
             }else{
 
             tmp =  Math.floor(Math.random() * 11);
@@ -73,3 +78,24 @@ var vueScoreBoard = new Vue({
         scoreboard: '',
     } // End data
 })
+
+// Reset function
+var vueResetBtn = new Vue({
+    el:"#resetBtn",
+    data:{
+        message: 'Zurücksetzen',
+    },
+    methods: {
+        reset: function (){
+            // Reset
+            Vue.$cookies.set('cookie-score',score);
+            score = 0
+            console.log("cookies deleted")
+        } // End reset function
+    } // end vueResetBtn methods
+}) // End vueResetBtn
+
+// Focus Btn method
+function focusBtn(){
+    document.getElementById("startBtn").focus();
+}

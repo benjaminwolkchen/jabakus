@@ -19,12 +19,15 @@
         <br>
         <br>
         <div id="TextBox">
-        <input v-model="textBox1" placeholder="" id="textinput"><br>
+        <input v-model="textBox1" placeholder="" id="textinput" onchange="javascript:focusBtn()"><br>
         <br>
         </div>
         <br>
         <br>
         <button id="startBtn" v-on:click="start()">{{ message }}</button>
+        <br>
+        <br>
+        <button id="resetBtn" v-on:click="reset()">{{ message }}</button>
         <br>
         <br>
         <div id="scoreboard">
