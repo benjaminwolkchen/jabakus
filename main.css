@@ -40,16 +40,20 @@ html{
     text-align: center;
     width: 90%;
     font-size: large;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* Center all elements with that class */
 .center{
-    margin: auto;
-    width: 60%;
-    padding: 10px;
+    text-align: center;
+}
+.footer{
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
 }
 
 /* scoreboard css */
 #scoreboard{
     font-family: 'Open Sans', sans-serif;
+    font-size: large;
 }
