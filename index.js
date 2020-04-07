@@ -4,6 +4,12 @@ var CTask;
 var score = 0;
 var beRight;
 
+// import score
+if($cookies.get("cookie-score") !== null){
+score = $cookies.get("cookie-score");
+console.log(score);
+} // end import cookie if
+
 // vue component that displays the message
 var textDisplay = new Vue({
     el: '#text',
@@ -30,6 +36,10 @@ var vueButton = new Vue({
                 textDisplay.message = "Herzlichen Glückwunsch, du hast die Aufgabe richtig gelöst!"
                 score++;
                 beRight = false;
+
+                // export score to cookie
+
+                Vue.$cookies.set('cookie-score',score);
 
                 // set scoreboard
                 vueScoreBoard.scoreboard = "Du hast die Aufgabe \""+tmp+" mal "+tmp2+" = "+CTask+"\" richtig gelöst! \n" + "\nDein Score ist "+score+"";
