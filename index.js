@@ -48,16 +48,23 @@ var vueButton = new Vue({
                     scoreTolerance+10;
                     console.log("New ScoreTolerance: "+scoreTolerance+".")
                 }
+            }else if(beRight == true && CTask !== textBox.textBox1){
+                vueScoreBoard.scoreboard = "Du hast die Aufgabe falsch gelöst. Die richtige Antwort wäre "+CTask+"."
+                console.log(textBox.textBox1)
+                beRight = false;
+
             }else{
+                if(beRight !== true){
+                    
+                    tmp =  Math.floor(Math.random() * 11);
+                    tmp2 =  Math.floor(Math.random() * 11);
+                    CTask = tmp * tmp2
 
-            tmp =  Math.floor(Math.random() * 11);
-            tmp2 =  Math.floor(Math.random() * 11);
-            CTask = tmp * tmp2
-
-            this.message = "Nächste Aufgabe!"
-            textDisplay.message = "Was ist "+tmp+" * "+tmp2+"?"
-            
-            beRight = true;
+                    this.message = "Nächste Aufgabe!"
+                    textDisplay.message = "Was ist "+tmp+" * "+tmp2+"?"
+                    
+                    beRight = true;
+                } // END if
             } // end if
         } // end start method
     } // End methods
