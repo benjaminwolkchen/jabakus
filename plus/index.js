@@ -15,7 +15,7 @@ console.log(score);
 var textDisplay = new Vue({
     el: '#text',
     data: {
-      message: "Willkommen zu Jabacus, einem simplen Einmaleins Spiel.",
+      message: "Willkommen zu Jabacus, einem simplen Plus Spiel.",
     },
 })
 
