@@ -27,6 +27,13 @@
         <button id="startBtn" v-on:click="start()">{{ message }}</button>
         <br>
         <br>
+        <button id="hardBtn" v-on:click="startHard()">{{ message }}</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <button id="resetBtn" v-on:click="reset()">{{ message }}</button>
         <br>
         <br>
@@ -44,12 +51,12 @@
     <div class="footer center"><p>Made with ❤️ by <a href="https://awesomebible.de">Benjamin Wölkchen</a>.</p>
         <p>© 2020 Benjamin Wölkchen</p></div>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script src="https://unpkg.com/vue-cookies@1.7.0/vue-cookies.js">
-    // 30 day after, expire
-    Vue.$cookies.config('30d')
-
-    // set secure, only https works
-    Vue.$cookies.config('7d','','',true)
+    <script src="https://unpkg.com/vue-cookies@1.7.0/vue-cookies.js"></script>
+    <script>    // 30 day after, expire
+        Vue.$cookies.config('30d')
+    
+        // set secure, only https works
+        Vue.$cookies.config('7d','','',true)
     </script>
     <script defer src="index.min.js"></script>
 </body>

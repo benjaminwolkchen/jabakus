@@ -69,6 +69,64 @@ var vueButton = new Vue({
         } // end start method
     } // End methods
 })
+///////////////////
+//-- HARD MODE --//
+///////////////////
+
+// Hard mode button
+var vueButton = new Vue({
+    el: '#hardBtn',
+    data: {
+        message: "Hard Mode",
+    },
+    methods: {
+        startHard: function (){
+            // check if user entered the correct answer
+            if(textBox.textBox1 == CTask && beRight == true){
+                console.log("gut.")
+
+                textDisplay.message = "Herzlichen Glückwunsch, du hast die Aufgabe richtig gelöst!"
+                score++;
+                beRight = false;
+
+                // export score to cookie
+
+                Vue.$cookies.set('cookie-score',score);
+
+                // set scoreboard
+                vueScoreBoard.scoreboard = "Du hast die Aufgabe \""+tmp+" mal "+tmp2+" = "+CTask+"\" richtig gelöst! \n" + "\nDein Score ist "+score+"";
+
+                // set highscore
+                if(scoreTolerance == score){
+                    vueScoreBoard.scoreboard = "Du hast einen neuen Highscore! Dein Highscore ist: "+score+".";
+                    scoreTolerance+10;
+                    console.log("New ScoreTolerance: "+scoreTolerance+".")
+                }
+            }else if(beRight == true && CTask !== textBox.textBox1){
+                vueScoreBoard.scoreboard = "Du hast die Aufgabe falsch gelöst. Die richtige Antwort wäre "+CTask+"."
+                console.log(textBox.textBox1)
+                beRight = false;
+
+            }else{
+                if(beRight !== true){
+                    
+                    tmp =  Math.floor(Math.random() * 110);
+                    tmp2 =  Math.floor(Math.random() * 110);
+                    CTask = tmp * tmp2
+
+                    this.message = "Nächste Aufgabe!"
+                    textDisplay.message = "Was ist "+tmp+" * "+tmp2+"?"
+                    
+                    beRight = true;
+                } // END if
+            } // end if
+        } // end start method
+    } // End methods
+})
+
+
+
+
 
 // vue component that powers the textbox
 var textBox = new Vue({
@@ -101,8 +159,3 @@ var vueResetBtn = new Vue({
         } // End reset function
     } // end vueResetBtn methods
 }) // End vueResetBtn
-
-// Focus Btn method
-function focusBtn(){
-    document.getElementById("startBtn").focus();
-}
