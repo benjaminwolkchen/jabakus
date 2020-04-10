@@ -5,6 +5,20 @@ var score = 0;
 var scoreTolerance = 10;
 var beRight;
 
+function generateTask(){
+    if(beRight !== true){
+                    
+        tmp =  Math.floor(Math.random() * 11);
+        tmp2 =  Math.floor(Math.random() * 11);
+        CTask = tmp / tmp2;
+
+        this.message = "Nächste Aufgabe!"
+        textDisplay.message = "Was ist "+tmp+" durch "+tmp2+"?"
+        
+        beRight = true;
+    } // END if
+}
+
 // import score
 if($cookies.get("dividing-score") !== null){
 score = $cookies.get("dividing-score");
@@ -18,7 +32,6 @@ var textDisplay = new Vue({
       message: "Willkommen zu Jabacus, einem simplen Divisions Spiel.",
     },
 })
-
 // vue component that makes the button to what it is
 var vueButton = new Vue({
     el: '#startBtn',
@@ -54,17 +67,11 @@ var vueButton = new Vue({
                 beRight = false;
 
             }else{
-                if(beRight !== true){
-                    
-                    tmp =  Math.floor(Math.random() * 11);
-                    tmp2 =  Math.floor(Math.random() * 11);
-                    CTask = tmp / tmp2;
-
-                    this.message = "Nächste Aufgabe!"
-                    textDisplay.message = "Was ist "+tmp+" durch "+tmp2+"?"
-                    
-                    beRight = true;
-                } // END if
+                generateTask()
+                if(tmp < tmp2){
+                    generateTask();
+                } // end if
+                
             } // end if
         } // end start method
     } // End methods
