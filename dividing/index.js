@@ -1,20 +1,25 @@
 var tmp;
 var tmp2;
+var tmp3;
 var CTask;
 var score = 0;
 var scoreTolerance = 10;
 var beRight;
 var currentMode = "";
 
-function generateTask(){
+function generateTask(num){
     if(beRight !== true){
                     
-        tmp =  Math.floor(Math.random() * 11);
-        tmp2 =  Math.floor(Math.random() * 11);
-        CTask = tmp / tmp2;
+        tmp = Math.floor(Math.random() * num);
+        tmp2 = Math.floor(Math.random() * num);
+        tmp3 = tmp * tmp2
+        CTask = tmp3 / tmp2
+        console.log(CTask);
+
+
 
         this.message = "Nächste Aufgabe!"
-        textDisplay.message = "Was ist "+tmp+" durch "+tmp2+"?"
+        textDisplay.message = "Was ist "+tmp3+" durch "+tmp2+"?"
         
         beRight = true;
     } // END if
@@ -70,9 +75,9 @@ var vueButton = new Vue({
                 beRight = false;
 
             }else{
-                generateTask()
+                generateTask(11)
                 if(tmp < tmp2){
-                    generateTask();
+                    generateTask(11);
                 } // end if
                 
             } // end if
@@ -106,7 +111,7 @@ var vueButton = new Vue({
                 Vue.$cookies.set('dividing-score',score);
 
                 // set scoreboard
-                vueScoreBoard.scoreboard = "Du hast die Aufgabe \""+tmp+" durch "+tmp2+" = "+CTask+"\" richtig gelöst! \n" + "\nDein Score ist "+score+"";
+                vueScoreBoard.scoreboard = "Du hast die Aufgabe \""+tmp+" mal "+tmp2+" = "+CTask+"\" richtig gelöst! \n" + "\nDein Score ist "+score+"";
 
                 // set highscore
                 if(scoreTolerance == score){
@@ -120,17 +125,11 @@ var vueButton = new Vue({
                 beRight = false;
 
             }else{
-                if(beRight !== true){
-                    
-                    tmp =  Math.floor(Math.random() * 110);
-                    tmp2 =  Math.floor(Math.random() * 110);
-                    CTask = tmp / tmp2
-
-                    this.message = "Nächste Aufgabe!"
-                    textDisplay.message = "Was ist "+tmp+" durch "+tmp2+"?"
-                    
-                    beRight = true;
-                } // END if
+                generateTask(110)
+                if(tmp < tmp2){
+                    generateTask(110);
+                } // end if
+                
             } // end if
         }} // end start method
     } // End methods
