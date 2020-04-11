@@ -4,6 +4,7 @@ var CTask;
 var score = 0;
 var scoreTolerance = 10;
 var beRight;
+var currentMode = "";
 
 // import score
 if($cookies.get("plus-score") !== null){
@@ -26,7 +27,9 @@ var vueButton = new Vue({
         message: "Starte das Spiel!",
     },
     methods: {
-        start: function (){
+        start: function (){if (currentMode == "" || currentMode == "easy"){
+            // set current mode
+            currentMode = "easy";
             // check if user entered the correct answer
             if(textBox.textBox1 == CTask && beRight == true){
                 console.log("gut.")
@@ -66,7 +69,7 @@ var vueButton = new Vue({
                     beRight = true;
                 } // END if
             } // end if
-        } // end start method
+        }} // end start method
     } // End methods
 })
 ///////////////////
@@ -80,7 +83,9 @@ var vueButton = new Vue({
         message: "Hard Mode",
     },
     methods: {
-        startHard: function (){
+        startHard: function (){if (currentMode == "" || currentMode == "hard"){
+            // set current mode
+            currentMode = "hard";
             // check if user entered the correct answer
             if(textBox.textBox1 == CTask && beRight == true){
                 console.log("gut.")
@@ -120,7 +125,7 @@ var vueButton = new Vue({
                     beRight = true;
                 } // END if
             } // end if
-        } // end start method
+        }} // end start method
     } // End methods
 })
 
@@ -156,6 +161,13 @@ var vueResetBtn = new Vue({
             Vue.$cookies.set('plus-score',score);
             score = 0
             console.log("cookies deleted")
+            currentMode = "";
+            tmp = 0;
+            tmp2 = 0;
+            CTask = 0;
+            scoreTolerance = 10;
+            beRight = true;
+            location.reload();
         } // End reset function
     } // end vueResetBtn methods
 }) // End vueResetBtn
