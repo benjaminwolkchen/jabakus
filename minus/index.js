@@ -160,7 +160,7 @@ var vueResetBtn = new Vue({
     methods: {
         reset: function (){
             // Reset
-            Vue.$cookies.set('minus-score',score);
+            Vue.$cookies.set('minus-score',0);
             score = 0
             console.log("cookies deleted")
             currentMode = "";
