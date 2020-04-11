@@ -18,12 +18,4 @@
   </author>
 
 </widget>
-
-<platform name="ios">
- <icon src="favicon.png" platform="ios"/>
-</platform>
-
-<platform name="android">
- <icon src="favicon.png" platform="android"/>
-</platform>
 <!-- Config.xml for adobe phonegap build -->
