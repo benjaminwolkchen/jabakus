@@ -16,8 +16,6 @@ function generateTask(num){
         CTask = tmp3 / tmp2
         console.log(CTask);
 
-
-
         this.message = "Nächste Aufgabe!"
         textDisplay.message = "Was ist "+tmp3+" durch "+tmp2+"?"
         
