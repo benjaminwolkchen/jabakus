@@ -76,7 +76,7 @@ var vueButton = new Vue({
 
             }else{
                 generateTask(11)
-                if(tmp < tmp2){
+                 if(tmp3 < tmp2 || tmp2 == 0){
                     generateTask(11);
                 } // end if
                 
@@ -126,7 +126,7 @@ var vueButton = new Vue({
 
             }else{
                 generateTask(110)
-                if(tmp < tmp2){
+                if(tmp < tmp2 && tmp1 !== 0 && tmp2 !== 0){
                     generateTask(110);
                 } // end if
                 
