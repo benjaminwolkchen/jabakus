@@ -1,13 +1,14 @@
 # 1o1
 A simple 1*1 Game created just in HTML and Javascript.
 
-## Version 3 is coming
--> Roadmap: [Take a look 👀](https://github.com/benjaminwolkchen/1o1/projects/3)
+## Version 3 is here, but it doesn't end there.
 
--> [Issues](https://github.com/benjaminwolkchen/1o1/issues) and [Pull Requests](https://github.com/benjaminwolkchen/1o1/pulls) are open!
+-> What I Planned: [Take a look :eyes:](https://github.com/benjaminwolkchen/1o1/projects/3)
+
+-> And your ideas: [Issues](https://github.com/benjaminwolkchen/1o1/issues) and [Pull Requests](https://github.com/benjaminwolkchen/1o1/pulls) are open!
 
 
-1o1 v2 is created with [vue.js](https://vuejs.org/)
+1o1 v3 is created with [vue.js](https://vuejs.org/)
 
 ---
 
