@@ -8,7 +8,7 @@ A simple 1*1 Game created just in HTML and Javascript.
 -> And your ideas: [Issues](https://github.com/benjaminwolkchen/1o1/issues) and [Pull Requests](https://github.com/benjaminwolkchen/1o1/pulls) are open!
 
 
-1o1 v3 is created with [vue.js](https://vuejs.org/) and it is a PWA.
+1o1 v3 is created with [vue.js](https://vuejs.org/) and it's a PWA.
 
 ---
 
