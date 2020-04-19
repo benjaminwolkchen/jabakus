@@ -5,6 +5,10 @@
     border:0;
     }
 
+html{ 
+    background-color: #83AAB7;
+}
+
 #text{
     font-family: 'Roboto', sans-serif;
 }
