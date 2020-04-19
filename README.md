@@ -12,4 +12,4 @@ A simple 1*1 Game created just in HTML and Javascript.
 
 ---
 
-Made with ❤️ by [Benjamin Hartmann](https://awesomebible.de)
+Made with ❤️ and much ☕ by [Benjamin Hartmann](https://awesomebible.de)
