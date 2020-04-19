@@ -1,19 +1,20 @@
 const staticDevCoffee = "dev-coffee-site-v1"
 const assets = [
   "/",
-  "/index.html",
-  "/main.min.css",
-  "/minus/index.min.js",
-  "/dividing/index.min.js",
-  "/plus/index.min.js",
-  "/times/index.min.js",
+  "/1o1",
+  "/1o1/index.html",
+  "/1o1/main.min.css",
+  "/1o1/minus/index.min.js",
+  "/1o1/dividing/index.min.js",
+  "/1o1/plus/index.min.js",
+  "/1o1/times/index.min.js",
   // Style Sheets
-  "/minus/index.min.css",
-  "/dividing/index.min.css",
-  "/plus/index.min.css",
-  "/times/index.min.css",
+  "/1o1/minus/index.min.css",
+  "/1o1/dividing/index.min.css",
+  "/1o1/plus/index.min.css",
+  "/1o1/times/index.min.css",
   // App.js itself
-  "/js/app.js",
+  "/1o1/js/app.js",
   // vue.js
   "https://cdn.jsdelivr.net/npm/vue",
   // vue.cookie.js
