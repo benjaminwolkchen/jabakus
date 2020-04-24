@@ -12,6 +12,10 @@ Jabakus v3 is created with [vue.js](https://vuejs.org/) and it's a PWA.
 
 Jabakus is hosted by Netlify - Netlify Status: [![Netlify Status](https://api.netlify.com/api/v1/badges/6d62e6c6-9eff-461a-9ae0-977261eaa86d/deploy-status)](https://app.netlify.com/sites/jabakus/deploys)
 
----
+* * *
+## Deploy via Netlify
+
+Simply click this Button: [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/benjaminwolkchen/jabakus)
+* * *
 
 Made with ❤️ and much ☕ by [Benjamin Hartmann](https://awesomebible.de)
