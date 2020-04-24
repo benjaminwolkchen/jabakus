@@ -52,7 +52,7 @@
         <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
         <!-- Footer -->
     <div class="footer center"><p>Made with <i class="em em-heart" aria-role="presentation" aria-label="HEAVY BLACK HEART"></i> and much <i class="em em-coffee" aria-role="presentation" aria-label="HOT BEVERAGE"></i>.</p>
-        <p>© 2020 <a href="https://awesomebible.de">Benjamin Wölkchen</a></p></div>
+        <p>&copy; <span id="year"></span> <a href="https://awesomebible.de">Benjamin Wölkchen</a></p></div>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="https://unpkg.com/vue-cookies@1.7.0/vue-cookies.js"></script>
     <script>    // 30 day after, expire
@@ -62,5 +62,6 @@
         Vue.$cookies.config('7d','','',true)
     </script>
     <script defer src="index.min.js"></script>
+    <script defer src="/js/copy.js"></script>
 </body>
 </html>
