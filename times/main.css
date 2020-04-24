@@ -22,6 +22,7 @@ html{
     text-decoration: none;
     display: inline-block;
     font-size: large;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #hardBtn{
@@ -33,6 +34,7 @@ html{
     text-decoration: none;
     display: inline-block;
     font-size: large;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #resetBtn{
@@ -44,6 +46,7 @@ html{
     text-decoration: none;
     display: inline-block;
     font-size: large;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #textinput{
