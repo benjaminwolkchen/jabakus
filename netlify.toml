@@ -1,6 +1,6 @@
 [[plugins]]
 package = "netlify-plugin-subfont"
-    # use this plugin https://github.com/munter/netlify-plugin-subfont
+  # use plugin: https://github.com/munter/netlify-plugin-subfont
 
   [plugins.inputs]
   # An array of glob patterns for pages on your site
@@ -23,16 +23,3 @@ package = "netlify-plugin-subfont"
   # Inline generated font subsets into their respective @font-face blocks
   # When set to `false` external font files will be created
   inlineFonts = false
-
-[[plugins]]
-package = "netlify-plugin-hashfiles"
-    # this plugin https://github.com/munter/netlify-plugin-hashfiles
-
-  [plugins.inputs]
-  # An array of glob patterns for pages on your site. Recursive traversal will start from these
-  entryPoints = [
-    "*.html"
-  ]
-
-  # Directory where content-addressable files are moved and immutable cache-headers are set
-  staticDir = "/static/"
