@@ -8,7 +8,9 @@ A simple 1*1 Game created just in HTML and Javascript.
 -> And your ideas: [Issues](https://github.com/benjaminwolkchen/jabakus/issues) and [Pull Requests](https://github.com/benjaminwolkchen/jabakus/pulls) are open!
 
 
-1o1 v3 is created with [vue.js](https://vuejs.org/) and it's a PWA.
+Jabakus v3 is created with [vue.js](https://vuejs.org/) and it's a PWA.
+
+Jabakus is hosted by Netlify - Netlify Status: [![Netlify Status](https://api.netlify.com/api/v1/badges/6d62e6c6-9eff-461a-9ae0-977261eaa86d/deploy-status)](https://app.netlify.com/sites/jabakus/deploys)
 
 ---
 
