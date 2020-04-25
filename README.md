@@ -22,6 +22,9 @@ Jabakus is hosted by Netlify - Netlify Status: [![Netlify Status](https://api.ne
 5. Host your Github Repo on Netlify. [here](https://docs.netlify.com/site-deploys/create-deploys/#deploy-with-git)
 6. Open an issue on this Repository to include a Link to your translated version into the Readme.
 
+### Jabakus Versions
+- [Jabakus EN :uk:](https://jabakus-en.netlify.app/) / [Jabakus EN Github Repo](https://github.com/benjaminwolkchen/jabakus-en)
+
 ## Deploy via Netlify
 
 Simply click this Button: [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/benjaminwolkchen/jabakus)
