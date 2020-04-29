@@ -9,6 +9,8 @@
     <link rel="shortcut icon" type="image/png" href="https://jabakus.netlify.app/favicon.png"/>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.min.css">
+
+    <link rel="stylesheet" href="https://jabakustrap.netlify.app/bootstrap/css/bootstrap.min.css">
 </head>
 <body>
     <main class="center">
@@ -24,17 +26,17 @@
         </div>
         <br>
         <br>
-        <button id="startBtn" v-on:click="start()">{{ message }}</button>
+        <button id="startBtn" v-on:click="start()" class="btn btn-primary">{{ message }}</button>
         <br>
         <br>
-        <button id="hardBtn" v-on:click="startHard()">{{ message }}</button>
-        <br>
-        <br>
-        <br>
+        <button id="hardBtn" v-on:click="startHard()" class="btn btn-primary">{{ message }}</button>
         <br>
         <br>
         <br>
-        <button id="resetBtn" v-on:click="reset()">{{ message }}</button>
+        <br>
+        <br>
+        <br>
+        <button id="resetBtn" v-on:click="reset()" class="btn btn-danger">{{ message }}</button>
         <br>
         <br>
         <div id="scoreboard">
@@ -63,5 +65,9 @@
     </script>
     <script defer src="index.min.js"></script>
     <script defer src="/js/copy.js"></script>
+
+            <!-- Bootstrap -->
+            <script src="https://jabakustrap.netlify.app/jquery.slim.min.js" crossorigin="anonymous"></script>
+            <script src="https://jabakustrap.netlify.app/bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
 </body>
 </html>
