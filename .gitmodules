@@ -1,0 +1,3 @@
+[submodule "jabakustrap"]
+	path = jabakustrap
+	url = https://github.com/benjaminwolkchen/jabakustrap.git
