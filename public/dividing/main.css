@@ -48,9 +48,9 @@
 #textinput{
     padding: 20px 37px;
     text-align: center;
-    width: 90%;
     font-size: large;
     font-family: 'Open Sans', sans-serif;
+    
 }
 
 /* Center all elements with that class */
@@ -66,4 +66,8 @@
 #scoreboard{
     font-family: 'Open Sans', sans-serif;
     font-size: large;
+}
+
+#TextBox{
+    font-family: 'Open Sans', sans-serif;
 }
