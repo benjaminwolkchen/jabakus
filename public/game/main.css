@@ -1,0 +1,73 @@
+/* Remove browser default stylings */
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    }
+
+#text{
+    font-family: 'Roboto', sans-serif;
+}
+
+#startBtn{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: large;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#hardBtn{
+    background-color: #008CBA; /* Blue */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: large;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#resetBtn{
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: large;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#textinput{
+    padding: 20px 37px;
+    text-align: center;
+    font-size: large;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+/* Center all elements with that class */
+.center{
+    text-align: center;
+}
+.footer{
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+}
+
+/* scoreboard css */
+#scoreboard{
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+}
+
+#TextBox{
+    font-family: 'Open Sans', sans-serif;
+}
