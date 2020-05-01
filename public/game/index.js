@@ -1,4 +1,4 @@
-if(window.location.hash = "#plus"){
+if(window.location.hash == "#plus"){
 var tmp;
 var tmp2;
 var CTask;
