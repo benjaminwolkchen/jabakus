@@ -1,23 +1,18 @@
 const staticDevCoffee = "dev-coffee-site-v1"
 const assets = [
-  "/",
+  "/translation.js",
   "/index.html",
-  "/dividing/index.html",
-  "/minus/index.html",
-  "/plus/index.html",
-  "/times/index.html",
-  "/main.min.css",
-  "/minus/index.min.js",
-  "/dividing/index.min.js",
-  "/plus/index.min.js",
-  "/times/index.min.js",
-  // Style Sheets
-  "/minus/index.min.css",
-  "/dividing/index.min.css",
-  "/plus/index.min.css",
-  "/times/index.min.css",
-  // App.js itself
-  "/js/app.js",
+  "serviceWorker.js",
+  "manifest.json",
+  "main.min.css",
+  "favicon.png",
+  "js/app.js",
+  "js/copy.js",
+  "vue"
+  // jQuery
+  "https://code.jquery.com/jquery-3.4.1.slim.min.js",
+  // Bootstrap
+  "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js",
   // vue.js
   "https://cdn.jsdelivr.net/npm/vue",
   // vue.cookie.js
