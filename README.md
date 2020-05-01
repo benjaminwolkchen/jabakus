@@ -1,4 +1,4 @@
-# jabakus-de
+# jabakus
 A simple 1*1 Game created just in HTML and Javascript.
 
 ## Version 4 is here, and it starts right here.
