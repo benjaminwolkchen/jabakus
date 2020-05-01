@@ -725,3 +725,10 @@ var vueResetBtn = new Vue({
     } // end vueResetBtn methods
 }) // End vueResetBtn
 }   // END times
+
+// NOTHING
+
+if(window.location.hash == ""){
+$('#errorModal').modal('show');
+}
+
