@@ -28,11 +28,6 @@ J
 | [Jabakus EN :uk:](https://jabakus-en.netlify.app/) | [Jabakus EN Github Repo](https://github.com/jabakus/jabakus-en) |
 |[Jabakus DE :de:](https://jabakus.netlify.app/)| [Jabakus DE Github Repo](https://github.com/jabakus/jabakus-de) |
 
-## Deploy via Netlify
-
-Simply click this Button: [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/jabakus/jabakus-de)
-
-
-
+* * *
 
 Made with ❤️ and much ☕ by [Benjamin Hartmann](https://awesomebible.de)
