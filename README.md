@@ -1,22 +1,22 @@
 # jabakus
 A simple 1*1 Game created just in HTML and Javascript.
 
-## Version 3 is here, but it doesn't end there.
+## Version 4 is here, and it starts right here.
 
 -> What I Planned: [Take a look :eyes:](https://github.com/benjaminwolkchen/jabakus/projects/3)
 
--> And your ideas: [Issues](https://github.com/benjaminwolkchen/jabakus/issues) and [Pull Requests](https://github.com/benjaminwolkchen/jabakus/pulls) are open!
+-> And your ideas: [Issues](https://github.com/benjaminwolkchen/jabakus-de/issues) and [Pull Requests](https://github.com/benjaminwolkchen/jabakus-de/pulls) are open!
 
 
-Jabakus v3 is created with [vue.js](https://vuejs.org/) and it's a PWA.
+Jabakus v4 is created with [vue.js](https://vuejs.org/) and it's a PWA.
 
-Jabakus is hosted by Netlify - Netlify Status: [![Netlify Status](https://api.netlify.com/api/v1/badges/6d62e6c6-9eff-461a-9ae0-977261eaa86d/deploy-status)](https://app.netlify.com/sites/jabakus/deploys)
+Jabakus is hosted by Netlify - Netlify Status: [![Netlify Status](https://api.netlify.com/api/v1/badges/6d62e6c6-9eff-461a-9ae0-977261eaa86d/deploy-status)](https://app.netlify.com/sites/jabakus-de/deploys)
 
 * * *
 
 ## Help with Translations
 1. Fork this Repository
-2. Clone it and open the index.js in the root of the project.
+2. Clone it and open the index.js in the public/ folder.
 3. Translate the given strings into your language
 4. Commit and push your changes to your repository.
 5. Host your Github Repo on Netlify. [here](https://docs.netlify.com/site-deploys/create-deploys/#deploy-with-git)
@@ -30,7 +30,7 @@ J
 
 ## Deploy via Netlify
 
-Simply click this Button: [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/benjaminwolkchen/jabakus)
+Simply click this Button: [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/benjaminwolkchen/jabakus-de)
 
 
 
