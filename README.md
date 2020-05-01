@@ -3,9 +3,9 @@ A simple 1*1 Game created just in HTML and Javascript.
 
 ## Version 4 is here, and it starts right here.
 
--> What I Planned: [Take a look :eyes:](https://github.com/benjaminwolkchen/jabakus/projects/3)
+-> What I Planned: [Take a look :eyes:](https://github.com/jabakus/jabakus/projects/3)
 
--> And your ideas: [Issues](https://github.com/benjaminwolkchen/jabakus-de/issues) and [Pull Requests](https://github.com/benjaminwolkchen/jabakus-de/pulls) are open!
+-> And your ideas: [Issues](https://github.com/jabakus/jabakus-de/issues) and [Pull Requests](https://github.com/jabakus/jabakus-de/pulls) are open!
 
 
 Jabakus v4 is created with [vue.js](https://vuejs.org/) and it's a PWA.
@@ -25,14 +25,9 @@ J
 ### Jabakus Versions
 | Language       | Github Page           |
 | ------------- |:-------------:|
-| [Jabakus EN :uk:](https://jabakus-en.netlify.app/) | [Jabakus EN Github Repo](https://github.com/benjaminwolkchen/jabakus-en) |
-|[Jabakus DE :de:](https://jabakus.netlify.app/)| [Jabakus DE Github Repo](https://github.com/benjaminwolkchen/jabakus-de) |
+| [Jabakus EN :uk:](https://jabakus-en.netlify.app/) | [Jabakus EN Github Repo](https://github.com/jabakus/jabakus-en) |
+|[Jabakus DE :de:](https://jabakus.netlify.app/)| [Jabakus DE Github Repo](https://github.com/jabakus/jabakus-de) |
 
-## Deploy via Netlify
-
-Simply click this Button: [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/benjaminwolkchen/jabakus-de)
-
-
-
+* * *
 
 Made with ❤️ and much ☕ by [Benjamin Hartmann](https://awesomebible.de)
