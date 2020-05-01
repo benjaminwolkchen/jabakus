@@ -25,8 +25,8 @@ J
 ### Jabakus Versions
 | Language       | Github Page           |
 | ------------- |:-------------:|
-| [Jabakus EN :uk:](https://jabakus-en.netlify.app/) | [Jabakus EN Github Repo](https://github.com/benjaminwolkchen/jabakus-en) |
-|[Jabakus DE :de:](https://jabakus.netlify.app/)| [Jabakus DE Github Repo](https://github.com/benjaminwolkchen/jabakus-de) |
+| [Jabakus EN :uk:](https://jabakus-en.netlify.app/) | [Jabakus EN Github Repo](https://github.com/jabakus/jabakus-en) |
+|[Jabakus DE :de:](https://jabakus.netlify.app/)| [Jabakus DE Github Repo](https://github.com/jabakus/jabakus-de) |
 
 ## Deploy via Netlify
 
