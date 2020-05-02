@@ -1,7 +1,7 @@
 const staticDevCoffee = "dev-coffee-site-v1"
 const assets = [
-  "/translation.js",
-  "/index.html",
+  "translation.js",
+  "index.html",
   "serviceWorker.js",
   "manifest.json",
   "main.min.css",
