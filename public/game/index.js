@@ -21,7 +21,7 @@ console.log(score);
 var textDisplay = new Vue({
     el: '#text',
     data: {
-      message: "Willkommen zu Jabacus, einem simplen Plus Spiel.",
+      message: "Willkommen zu Jabakus, einem simplen Plus Spiel.",
     },
 })
 
@@ -202,7 +202,7 @@ if( window.location.hash == "#minus" ){
     var textDisplay = new Vue({
         el: '#text',
         data: {
-          message: "Willkommen zu Jabacus, einem simplen Minus Spiel.",
+          message: "Willkommen zu Jabakus, einem simplen Minus Spiel.",
         },
     })
     
@@ -401,7 +401,7 @@ console.log(score);
 var textDisplay = new Vue({
     el: '#text',
     data: {
-      message: "Willkommen zu Jabacus, einem simplen Divisions Spiel.",
+      message: "Willkommen zu Jabakus, einem simplen Divisions Spiel.",
     },
 })
 // vue component that makes the button to what it is
@@ -572,7 +572,7 @@ console.log(score);
 var textDisplay = new Vue({
     el: '#text',
     data: {
-      message: "Willkommen zu Jabacus, einem simplen Einmaleins Spiel.",
+      message: "Willkommen zu Jabakus, einem simplen Einmaleins Spiel.",
     },
 })
 
