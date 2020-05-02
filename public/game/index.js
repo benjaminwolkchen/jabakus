@@ -385,7 +385,6 @@ function generateTask(num){
         CTask = tmp3 / tmp2
         console.log(CTask);
 
-        this.message = "Nächste Aufgabe!"
         textDisplay.message = "Was ist "+tmp3+" durch "+tmp2+"?"
         
         beRight = true;
@@ -443,8 +442,10 @@ var vueButton = new Vue({
 
             }else{
                 generateTask(11)
+                this.message = "Nächste Aufgabe!"
                  if(tmp3 < tmp2 || tmp2 == 0){
                     generateTask(11);
+                    this.message = "Nächste Aufgabe!"
                 } // end if
                 
             } // end if
@@ -456,7 +457,7 @@ var vueButton = new Vue({
 ///////////////////
 
 // Hard mode button
-var vueButton = new Vue({
+var hardButton = new Vue({
     el: '#hardBtn',
     data: {
         message: "Hard Mode",
@@ -492,9 +493,11 @@ var vueButton = new Vue({
                 beRight = false;
 
             }else{
-                generateTask(110)
+                generateTask(110);
+                this.message = "Nächste Aufgabe!"
                 if(tmp < tmp2 && tmp1 !== 0 && tmp2 !== 0){
                     generateTask(110);
+                    this.message = "Nächste Aufgabe!"
                 } // end if
                 
             } // end if
