@@ -8,7 +8,6 @@ const assets = [
   "favicon.png",
   "js/app.js",
   "js/copy.js",
-  "vue"
   // jQuery
   "https://code.jquery.com/jquery-3.4.1.slim.min.js",
   // Bootstrap
