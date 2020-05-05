@@ -1,0 +1,4 @@
+# a path:
+/manifest.appcache
+    content-type: text/plain; charset=UTF-8
+    content-type: "text/cache-manifest"
