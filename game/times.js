@@ -1,7 +1,7 @@
 //////////////
 // TIMES /////
 //////////////
-    var tmp;
+var tmp;
 var tmp2;
 var CTask;
 var score = 0;
