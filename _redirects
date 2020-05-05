@@ -1,0 +1,7 @@
+# Redirects from what the browser requests to what we serve
+/about  https://awesomebible.de/kontakt
+/kontakt https://awesomebible.de/kontakt
+/impressum https://awesomebible.de/kontakt
+/privacy https://awesomebible.de/datenschutz
+/datenschutz https://awesomebible.de/datenschutz
+/datenschutzerklaerung https://awesomebible.de/datenschutz
