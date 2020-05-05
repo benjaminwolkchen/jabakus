@@ -1,0 +1,24 @@
+# Appcache.manifest
+
+# Root
+index.html
+main.min.css
+translation.js
+favicon.png
+
+# js
+js/app.js
+js/copy.js
+
+# game
+game/index.html
+game/index.min.js
+game/index.min.css
+
+# external libs
+https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
+https://cdn.jsdelivr.net/npm/vue
+https://code.jquery.com/jquery-3.4.1.slim.min.js
+https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js
+https://unpkg.com/vue-cookies@1.7.0/vue-cookies.js
+
