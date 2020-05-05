@@ -1,15 +1,32 @@
+function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+}
+
 /////////////////
 ///// PLUS //////
 /////////////////
 
 if(window.location.hash == "#plus"){
+
 var tmp;
 var tmp2;
 var CTask;
+
 var score = 0;
 var scoreTolerance = 10;
+
 var beRight;
 var currentMode = "";
+
+var wrongAnswers = [];
+var round = 0
+var roundTolerance = 5;
+
 
 // import score
 if($cookies.get("plus-score") !== null){
@@ -61,9 +78,15 @@ var vueButton = new Vue({
                 console.log(textBox.textBox1)
                 beRight = false;
 
+                // write to array
+                wrongAnswers.push(tmp+","+tmp2)
+                console.log(wrongAnswers)
             }else{
                 if(beRight !== true){
-                    
+                    if(round == roundTolerance){
+                        
+                    } // end if pt1
+                    else{
                     tmp =  Math.floor(Math.random() * 11);
                     tmp2 =  Math.floor(Math.random() * 11);
                     CTask = tmp + tmp2
@@ -72,6 +95,8 @@ var vueButton = new Vue({
                     textDisplay.message = "Was ist "+tmp+" plus "+tmp2+"?"
                     
                     beRight = true;
+                    } // End else.
+                    
                 } // END if
             } // end if
         }} // end start method
