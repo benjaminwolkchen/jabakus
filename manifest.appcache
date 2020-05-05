@@ -15,7 +15,7 @@ js/copy.js
 # game
 game/index.html
 game/index.min.js
-game/index.min.css
+game/main.min.css
 
 # external libs
 https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
