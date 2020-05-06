@@ -1,6 +1,8 @@
 //////////////
 // TIMES /////
 //////////////
+if(window.location.hash == "#times"){
+
 var tmp;
 var tmp2;
 var CTask;
@@ -143,3 +145,4 @@ var textBox = new Vue({
       textBox1: 0,
     },
 })
+}

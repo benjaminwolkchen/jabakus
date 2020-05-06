@@ -1,6 +1,8 @@
 /////////////////////////
 /// MINUS ///////////////
 /////////////////////////
+if(window.location.hash == "#minus"){
+
     var tmp;
     var tmp2;
     var CTask;
@@ -176,3 +178,4 @@
             } // End reset function
         } // end vueResetBtn methods
     }) // End vueResetBtn
+}
