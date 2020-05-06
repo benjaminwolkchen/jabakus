@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1o1</title>
+
+    <link rel="shortcut icon" type="image/png" href="images/icons/icon-512x512.png"/>
+    <link rel="shortcut icon" type="image/png" href="https://jabakus-de.netlify.app/images/icons/icon-512x512.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></head>
+<body>
+    <main class="center">
+        <h1 id="text">
+            {{ message }}
+            <br>
+        </h1>
+        <br>
+        <br>
+        <div id="TextBox">
+            <label for="textinput">Ergebnis</label>
+            <input v-model="textBox1" placeholder="" id="textinput" class="form-control">
+        <br>
+        </div>
+        <br>
+        <br>
+        <button id="startBtn" v-on:click="start()" class="btn btn-primary">{{ message }}</button>
+        <br>
+        <br>
+        <button id="hardBtn" v-on:click="startHard()" class="btn btn-primary">{{ message }}</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button id="resetBtn" v-on:click="reset()"class="btn btn-danger">{{ message }}</button>
+        <br>
+        <br>
+        <div id="scoreboard">
+            <h2>Scoreboard</h2>
+           {{ scoreboard }} 
+        </div>
+        <br>
+        <button onclick="javascript:history.back(-1)" class="btn btn-primary">Zurück <i class="em em-arrow_backward" aria-role="presentation" aria-label="BLACK LEFT-POINTING TRIANGLE"></i></button>
+    </main>
+    <br>
+    <br>
+
+    <br>
+    <br>
+    <br>
+    <!-- Footer -->
+    <div class="footer center"><p>Made with <i class="em em-heart" aria-role="presentation" aria-label="HEAVY BLACK HEART"></i> and much <i class="em em-coffee" aria-role="presentation" aria-label="HOT BEVERAGE"></i>.</p>
+        <p>&copy; <span id="year"></span> <a href="https://awesomebible.de">Benjamin Wölkchen</a></p></div>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="https://unpkg.com/vue-cookies@1.7.0/vue-cookies.js"></script>
+    <script>    // 30 day after, expire
+        Vue.$cookies.config('30d')
+    
+        // set secure, only https works
+        Vue.$cookies.config('7d','','',true)
+    </script>
+
+      <!-- Embed scripts -->
+      <script v-if="window.location.hash == '#minus'" src="minus.min.js"></script>
+      <script v-if="window.location.hash == '#plus'" src="plus.min.js"></script>
+      <script v-if="window.location.hash == '#times'" src="times.min.js"></script>
+      <script v-if="window.location.hash == '#dividing'" src="dividing.min.js"></script>
+      <script defer src="components.min.js"></script>
+
+    <script defer src="/js/copy.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    
+<!-- Modal -->
+<div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Ups... Das hätte nicht passieren dürfen!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Die Rechenart ist in den weiten des Internets verloren gegangen... Gehe zurück um sie zu suchen!
+      </div>
+      <div class="modal-footer">
+        <a type="button" class="btn btn-primary" href="/">Okay</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Emoji Magic-->
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+</body>
+</html>
