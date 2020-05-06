@@ -134,7 +134,28 @@ var vueButton = new Vue({
     } // End methods
 })
 
-
+    // Reset function
+    var vueResetBtn = new Vue({
+        el:"#resetBtn",
+        data:{
+            message: 'Zurücksetzen',
+        },
+        methods: {
+            reset: function (){
+                // Reset
+                Vue.$cookies.set('times-score',0);
+                score = 0
+                console.log("cookies deleted")
+                currentMode = "";
+                tmp = 0;
+                tmp2 = 0;
+                CTask = 0;
+                scoreTolerance = 10;
+                beRight = true;
+                location.reload();
+            } // End reset function
+        } // end vueResetBtn methods
+    }) // End vueResetBtn
 
 
 
