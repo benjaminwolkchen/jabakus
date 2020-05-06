@@ -9,5 +9,5 @@ var vueScoreBoard = new Vue({
 // NOTHING
 
 if(window.location.hash == ""){
-$('#errorModal').modal('show');
+    $('#errorModal').modal('show')
 }
