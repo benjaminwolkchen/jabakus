@@ -187,15 +187,18 @@ var vueButton = new Vue({
         methods: {
             reset: function (){
                 // Reset
-                Vue.$cookies.set('times-score',0);
-                score = 0
-                console.log("cookies deleted")
-                currentMode = "";
-                tmp = 0;
-                tmp2 = 0;
-                CTask = 0;
-                scoreTolerance = 10;
+                score = 0;
+                scoreTolerance = 5;
+                
                 beRight = true;
+                currentMode = "";
+                
+                wrongAnswersTmp = [];
+                wrongAnswersTmp2 = [];
+                round = 0
+                roundTolerance = 5;
+                randomNumber = Math.floor(Math.random() * wrongAnswersTmp.length)
+
                 location.reload();
             } // End reset function
         } // end vueResetBtn methods
