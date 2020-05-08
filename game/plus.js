@@ -1,7 +1,6 @@
 /////////////////
 ///// PLUS //////
 /////////////////
-
 if(window.location.hash == "#plus"){
 
     var tmp;
@@ -9,15 +8,16 @@ if(window.location.hash == "#plus"){
     var CTask;
     
     var score = 0;
-    var scoreTolerance = 10;
+    var scoreTolerance = 1;
     
     var beRight;
     var currentMode = "";
     
-    var wrongAnswers = [];
+    var wrongAnswersTmp = [];
+    var wrongAnswersTmp2 = [];
     var round = 0
     var roundTolerance = 5;
-    
+    var randomNumber = Math.floor(Math.random() * wrongAnswersTmp.length)
     
     // import score
     if($cookies.get("plus-score") !== null){
@@ -57,7 +57,8 @@ if(window.location.hash == "#plus"){
     
                     // set scoreboard
                     vueScoreBoard.scoreboard = "Du hast die Aufgabe \""+tmp+" mal "+tmp2+" = "+CTask+"\" richtig gelöst! \n" + "\nDein Score ist "+score+"";
-    
+
+                    round++
                     // set highscore
                     if(scoreTolerance == score){
                         vueScoreBoard.scoreboard = "Du hast einen neuen Highscore! Dein Highscore ist: "+score+".";
@@ -70,13 +71,25 @@ if(window.location.hash == "#plus"){
                     beRight = false;
     
                     // write to array
-                    wrongAnswers.push(tmp+","+tmp2)
-                    console.log(wrongAnswers)
+                    wrongAnswersTmp.push(tmp)
+                    wrongAnswersTmp2.push(tmp2)
+
+                    round++
+
                 }else{
                     if(beRight !== true){
                         if(round == roundTolerance){
-                            shuffleArray(wrongAnswers)
+                            tmp = wrongAnswersTmp[randomNumber]
+                            tmp2 = wrongAnswersTmp2[randomNumber]
+
+                            CTask = tmp + tmp2;
                             
+                            this.message = "Nächste Aufgabe!"
+                            textDisplay.message = "Was ist "+tmp+" plus "+tmp2+"?"
+
+                            beRight = true;
+
+                            round = 0
                         } // end if pt1
                         else{
                         tmp =  Math.floor(Math.random() * 11);
@@ -133,9 +146,28 @@ if(window.location.hash == "#plus"){
                     vueScoreBoard.scoreboard = "Du hast die Aufgabe falsch gelöst. Die richtige Antwort wäre "+CTask+"."
                     console.log(textBox.textBox1)
                     beRight = false;
+
+                    // write to array
+                    wrongAnswersTmp.push(tmp)
+                    wrongAnswersTmp2.push(tmp2)
+
+                    round++
     
                 }else{
                     if(beRight !== true){
+                        if(round == roundTolerance){
+                            tmp = wrongAnswersTmp[randomNumber]
+                            tmp2 = wrongAnswersTmp2[randomNumber]
+
+                            CTask = tmp + tmp2;
+                            
+                            this.message = "Nächste Aufgabe!"
+                            textDisplay.message = "Was ist "+tmp+" plus "+tmp2+"?"
+
+                            beRight = true;
+
+                            round = 0
+                        } // end if pt1
                         
                         tmp =  Math.floor(Math.random() * 110);
                         tmp2 =  Math.floor(Math.random() * 110);

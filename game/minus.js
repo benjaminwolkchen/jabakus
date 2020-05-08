@@ -6,10 +6,18 @@ if(window.location.hash == "#minus"){
     var tmp;
     var tmp2;
     var CTask;
+    
     var score = 0;
-    var scoreTolerance = 10;
+    var scoreTolerance = 1;
+    
     var beRight;
     var currentMode = "";
+    
+    var wrongAnswersTmp = [];
+    var wrongAnswersTmp2 = [];
+    var round = 0
+    var roundTolerance = 5;
+    var randomNumber = Math.floor(Math.random() * wrongAnswersTmp.length)
     
     // import score
     if($cookies.get("minus-score") !== null){
@@ -61,9 +69,28 @@ if(window.location.hash == "#minus"){
                     vueScoreBoard.scoreboard = "Du hast die Aufgabe falsch gelöst. Die richtige Antwort wäre "+CTask+"."
                     console.log(textBox.textBox1)
                     beRight = false;
+
+                    // write to array
+                    wrongAnswersTmp.push(tmp)
+                    wrongAnswersTmp2.push(tmp2)
+
+                    round++
     
                 }else{
                     if(beRight !== true){
+                        if(round == roundTolerance){
+                            tmp = wrongAnswersTmp[randomNumber]
+                            tmp2 = wrongAnswersTmp2[randomNumber]
+
+                            CTask = tmp - tmp2;
+                            
+                            this.message = "Nächste Aufgabe!"
+                            textDisplay.message = "Was ist "+tmp+" minus "+tmp2+"?"
+
+                            beRight = true;
+
+                            round = 0
+                        } // end if pt1
                         
                         tmp =  Math.floor(Math.random() * 11);
                         tmp2 =  Math.floor(Math.random() * 11);
@@ -117,9 +144,28 @@ if(window.location.hash == "#minus"){
                     vueScoreBoard.scoreboard = "Du hast die Aufgabe falsch gelöst. Die richtige Antwort wäre "+CTask+"."
                     console.log(textBox.textBox1)
                     beRight = false;
+
+                    // write to array
+                    wrongAnswersTmp.push(tmp)
+                    wrongAnswersTmp2.push(tmp2)
+
+                    round++
     
                 }else{
                     if(beRight !== true){
+                        if(round == roundTolerance){
+                            tmp = wrongAnswersTmp[randomNumber]
+                            tmp2 = wrongAnswersTmp2[randomNumber]
+
+                            CTask = tmp + tmp2;
+                            
+                            this.message = "Nächste Aufgabe!"
+                            textDisplay.message = "Was ist "+tmp+" plus "+tmp2+"?"
+
+                            beRight = true;
+
+                            round = 0
+                        } // end if pt1
                         
                         tmp =  Math.floor(Math.random() * 110);
                         tmp2 =  Math.floor(Math.random() * 110);
