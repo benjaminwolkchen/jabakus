@@ -4,16 +4,37 @@
 
 if(window.location.hash == "#dividing"){
     var tmp;
-var tmp2;
-var tmp3;
-var CTask;
-var score = 0;
-var scoreTolerance = 10;
-var beRight;
-var currentMode = "";
+    var tmp2;
+    var CTask;
+    
+    var score = 0;
+    var scoreTolerance = 1;
+    
+    var beRight;
+    var currentMode = "";
+    
+    var wrongAnswersTmp = [];
+    var wrongAnswersTmp2 = [];
+    var round = 0
+    var roundTolerance = 5;
+    var randomNumber = Math.floor(Math.random() * wrongAnswersTmp.length)
 
 function generateTask(num){
     if(beRight !== true){
+        if(round == roundTolerance){
+            tmp = wrongAnswersTmp[randomNumber];
+            tmp2 = wrongAnswersTmp2[randomNumber];
+            tmp3 = tmp * tmp2
+            CTask = tmp3 / tmp2
+            
+            this.message = "Nächste Aufgabe!"
+            textDisplay.message = "Was ist "+tmp3+" geteilt durch "+tmp2+"?"
+
+            beRight = true;
+
+            round = 0
+        } // end if pt1
+        
                     
         tmp = Math.floor(Math.random() * num);
         tmp2 = Math.floor(Math.random() * num);
@@ -63,7 +84,7 @@ var vueButton = new Vue({
                 Vue.$cookies.set('dividing-score',score);
 
                 // set scoreboard
-                vueScoreBoard.scoreboard = "Du hast die Aufgabe \""+tmp+" mal "+tmp2+" = "+CTask+"\" richtig gelöst! \n" + "\nDein Score ist "+score+"";
+                vueScoreBoard.scoreboard = "Du hast die Aufgabe \""+tmp+" durch "+tmp3+" = "+CTask+"\" richtig gelöst! \n" + "\nDein Score ist "+score+"";
 
                 // set highscore
                 if(scoreTolerance == score){
@@ -73,6 +94,13 @@ var vueButton = new Vue({
                 }
             }else if(beRight == true && CTask !== textBox.textBox1){
                 vueScoreBoard.scoreboard = "Du hast die Aufgabe falsch gelöst. Die richtige Antwort wäre "+CTask+"."
+
+
+                // write to array
+                wrongAnswersTmp.push(tmp3)
+                wrongAnswersTmp2.push(tmp2)
+                round++
+
                 console.log(textBox.textBox1)
                 beRight = false;
 
@@ -128,6 +156,14 @@ var hardButton = new Vue({
                 console.log(textBox.textBox1)
                 beRight = false;
 
+                // write to array
+                wrongAnswersTmp.push(tmp3)
+                wrongAnswersTmp2.push(tmp2)
+                round++
+
+                console.log(textBox.textBox1)
+                beRight = false;
+                
             }else{
                 generateTask(110);
                 this.message = "Nächste Aufgabe!"
