@@ -11,6 +11,12 @@ var scoreTolerance = 10;
 var beRight;
 var currentMode = "";
 
+var wrongAnswersTmp = [];
+var wrongAnswersTmp2 = [];
+var round = 0
+var roundTolerance = 5;
+var randomNumber = Math.floor(Math.random() * wrongAnswersTmp.length)
+
 // import score
 if($cookies.get("times-score") !== null){
 score = $cookies.get("times-score");
@@ -61,8 +67,27 @@ var vueButton = new Vue({
                 console.log(textBox.textBox1)
                 beRight = false;
 
+                // write to array
+                wrongAnswersTmp.push(tmp)
+                wrongAnswersTmp2.push(tmp2)
+
+                round++
+
             }else{
                 if(beRight !== true){
+                    if(round == roundTolerance){
+                        tmp = wrongAnswersTmp[randomNumber]
+                        tmp2 = wrongAnswersTmp2[randomNumber]
+
+                        CTask = tmp * tmp2;
+                        
+                        this.message = "Nächste Aufgabe!"
+                        textDisplay.message = "Was ist "+tmp+" mal "+tmp2+"?"
+
+                        beRight = true;
+
+                        round = 0
+                    } // end if pt1
                     
                     tmp =  Math.floor(Math.random() * 11);
                     tmp2 =  Math.floor(Math.random() * 11);
@@ -117,8 +142,27 @@ var vueButton = new Vue({
                 console.log(textBox.textBox1)
                 beRight = false;
 
+                    // write to array
+                    wrongAnswersTmp.push(tmp)
+                    wrongAnswersTmp2.push(tmp2)
+
+                    round++
+
             }else{
                 if(beRight !== true){
+                    if(round == roundTolerance){
+                        tmp = wrongAnswersTmp[randomNumber]
+                        tmp2 = wrongAnswersTmp2[randomNumber]
+
+                        CTask = tmp * tmp2;
+                        
+                        this.message = "Nächste Aufgabe!"
+                        textDisplay.message = "Was ist "+tmp+" mal "+tmp2+"?"
+
+                        beRight = true;
+
+                        round = 0
+                    } // end if pt1
                     
                     tmp =  Math.floor(Math.random() * 110);
                     tmp2 =  Math.floor(Math.random() * 110);
@@ -143,15 +187,18 @@ var vueButton = new Vue({
         methods: {
             reset: function (){
                 // Reset
-                Vue.$cookies.set('times-score',0);
-                score = 0
-                console.log("cookies deleted")
-                currentMode = "";
-                tmp = 0;
-                tmp2 = 0;
-                CTask = 0;
-                scoreTolerance = 10;
+                score = 0;
+                scoreTolerance = 5;
+                
                 beRight = true;
+                currentMode = "";
+                
+                wrongAnswersTmp = [];
+                wrongAnswersTmp2 = [];
+                round = 0
+                roundTolerance = 5;
+                randomNumber = Math.floor(Math.random() * wrongAnswersTmp.length)
+
                 location.reload();
             } // End reset function
         } // end vueResetBtn methods

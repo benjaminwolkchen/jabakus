@@ -131,7 +131,7 @@ var hardButton = new Vue({
             }else{
                 generateTask(110);
                 this.message = "Nächste Aufgabe!"
-                if(tmp < tmp2 && tmp1 !== 0 && tmp2 !== 0){
+                if(tmp < tmp2 && tmp !== 0 && tmp2 !== 0){
                     generateTask(110);
                     this.message = "Nächste Aufgabe!"
                 } // end if
