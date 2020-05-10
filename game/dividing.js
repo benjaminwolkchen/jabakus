@@ -49,8 +49,8 @@ function generateTask(num){
 }
 
 // import score
-if($cookies.get("dividing-score") !== null){
-score = $cookies.get("dividing-score");
+if(Vue.$cookies.get("dividing-score") !== null){
+score = Vue.$cookies.get("dividing-score");
 console.log(score);
 } // end import cookie if
 
