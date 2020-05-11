@@ -194,12 +194,7 @@ if(window.location.hash == "#minus"){
     })
     
     // vue component that powers the scoreboard
-    var vueScoreBoard = new Vue({
-        el: "#scoreboard",
-        data:{
-            scoreboard: '',
-        } // End data
-    })
+
     
     // Reset function
     var vueResetBtn = new Vue({

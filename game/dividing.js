@@ -190,12 +190,7 @@ var textBox = new Vue({
 })
 
 // vue component that powers the scoreboard
-var vueScoreBoard = new Vue({
-    el: "#scoreboard",
-    data:{
-        scoreboard: '',
-    } // End data
-})
+
 
 // Reset function
 var vueResetBtn = new Vue({
