@@ -10,37 +10,22 @@
     <link rel="stylesheet" href="/main.min.css">
 </head>
 <body>
-    <main class="center"><h1 class="title">Einstelllungen</h1>
-        <br>
-        <br>
-        <button onclick="speech(true)" class="btn btn-primary">Spracheingabe AN</button><br><br>
-        <button onclick="speech(false)" class="btn btn-primary">Spracheingabe AUS</button><br><br>
+    <main class="center"><h1 class="title">Kontakt</h1>
         <br>
         <br>
         <br>
         <br>
-        <table>
-<thead>
-  <tr>
-    <th><div class="card" style="width: 18rem;">
-            <img src="/images/assets/voice.svg" height="256px" width="156px" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Spracheingabe</h5>
-              <p class="card-text">Damit die Spracheingabe funktioniert, musst du einen unterstützten Browser benutzen.</p>
-              <a href="https://github.com/jabakus/jabakus/wiki/Spracheingabe" class="btn btn-primary">Mehr dazu</a>
+        <form >
+            <div class="form-group" name="contact" netlify>
+              <label for="emailinput">Email Adresse*</label>
+              <input type="email" class="form-control" id="emailinput" placeholder="name@example.com">
             </div>
-          </div></th>
-    <th><div class="card" style="width: 18rem;">
-            <img src="/images/assets/contact.svg" height="256px" width="156px" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Kontakt</h5>
-              <p class="card-text">Hast du Fragen, Verbesserungsvorschläge<br> oder willst einfach nur reden?</p><br>
-              <a href="https://jabakus.netlify.app/contact" class="btn btn-primary">Schreib uns!</a>
+            <div class="form-group">
+              <label for="textarea1">Nachricht*</label>
+              <textarea class="form-control" id="textarea" rows="3"></textarea>
             </div>
-          </div><br></th>
-  </tr>
-</thead>
-</table>
+            <input type="submit" class="btn btn-success">
+          </form>
         
     </main>
     <br><br><br>

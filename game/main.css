@@ -71,3 +71,10 @@
 #TextBox{
     font-family: 'Open Sans', sans-serif;
 }
+
+html{
+    background-image: url("https://images.pexels.com/photos/601798/pexels-photo-601798.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+}
