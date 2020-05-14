@@ -13,3 +13,5 @@ Jabakus v4 is created with [vue.js](https://vuejs.org/) and it's a PWA.
 Jabakus is hosted by Netlify - Netlify Status: [![Netlify Status](https://api.netlify.com/api/v1/badges/753cad30-b547-45bc-86a7-e7fb7cae12b6/deploy-status)](https://app.netlify.com/sites/jabakus/deploys)
 
 Made with ❤️ and much ☕ by [Benjamin Hartmann](https://awesomebible.de)
+
+[![Deploys by Netlify](https://www.netlify.com/img/global/badges/netlify-color-bg.svg)](https://www.netlify.com)
