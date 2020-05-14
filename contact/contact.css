@@ -16,3 +16,6 @@
 .hidden{
     display: none;
 }
+iframe{
+    text-align: center;
+}
