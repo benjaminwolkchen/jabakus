@@ -15,11 +15,15 @@
         <br>
         <br>
         <br>
-        <form name="contact" method="POST" data-netlify="true" action="/contact/success/index.html">
+        <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" action="/contact/success/index.html">
           <p>
             <label>Dein Name: <input type="text" name="name" class="form-control" /></label>   
           </p>
-        
+          
+          <!-- Please Fill it out -->
+          <p class="hidden">
+            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+          </p>
        
           <p>
             <label>Deine Email: <input type="email" name="email" class="form-control" /></label>
@@ -29,7 +33,9 @@
           <p>
             <label>Deine Nachricht: <textarea name="message" class="form-control"></textarea></label>
           </p>
-        
+          <p>
+            Ich bin kein Roboter: <div data-netlify-recaptcha="true"></div>
+          </p>
           <p>
             <button type="submit" class="btn btn-success" class="form-control">Senden!</button>
           </p>
