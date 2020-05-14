@@ -1,0 +1,15 @@
+/* Remove browser default stylings */
+
+
+#text{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Center all elements with that class */
+ .center{
+    text-align: center;
+} 
+.footer{
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+}

@@ -7,7 +7,7 @@
     <title>Einstellungen</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></head>
-    <link rel="stylesheet" href="/main.min.css">
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
     <main class="center"><h1 class="title">Kontakt</h1>
@@ -15,17 +15,26 @@
         <br>
         <br>
         <br>
-        <form >
-            <div class="form-group" name="contact" action="/contact/success" data-netlify="true" method="POST">
-              <label for="emailinput">Email Adresse*</label>
-              <input type="email" class="form-control" id="emailinput" placeholder="name@example.com" name="email">
-            </div>
-            <div class="form-group">
-              <label for="textarea1">Nachricht*</label>
-              <textarea class="form-control" id="textarea" rows="3" name="message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-success">
-          </form>
+        <form name="contact" method="POST" data-netlify="true" action="/contact/success/index.html">
+          <p>
+            <label>Dein Name: <input type="text" name="name" class="form-control" /></label>   
+          </p>
+        
+       
+          <p>
+            <label>Deine Email: <input type="email" name="email" class="form-control" /></label>
+          </p>
+        
+        
+          <p>
+            <label>Deine Nachricht: <textarea name="message" class="form-control"></textarea></label>
+          </p>
+        
+          <p>
+            <button type="submit" class="btn btn-success" class="form-control">Senden!</button>
+          </p>
+        </form>
+        
         
     </main>
     <br><br><br>
