@@ -24,9 +24,17 @@
           <p class="hidden">
             <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
           </p>
-       
           <p>
-            <label>Deine Email: <input type="email" name="email" class="form-control" /></label>
+          <label>Wieso schreibst du uns? 
+            <select class="form-control" name="messagetype" required>
+              <option>Ich habe einen Fehler gefunden.</option>
+              <option>Ich habe einen Vorschlag.</option>
+              <option>Etwas anderes.</option>
+            </select>
+          </label>
+          </p>
+          <p>
+            <label>Deine Email*: <input type="email" name="email" class="form-control" /></label>
           </p>
         
         
@@ -36,6 +44,8 @@
             <button type="submit" class="btn btn-success" class="form-control">Senden!</button>
           </p>
         </form>
+        <br>
+        <p>* Wir werden deine Daten niemals verkaufen oder dir Spam schicken,<br> wir behalten deine Email und deine Nachricht nur so lange, <br> wie wir mit dir in Kontakt stehen, und deine Anfrage bearbeiten. <br><br> <b>Danach schreddern wir alles, was wir jemals von dir hatten. Versprochen!</b></p>
         
         
     </main>
