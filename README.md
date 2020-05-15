@@ -1,3 +1,5 @@
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/jabakus/jabakus) 
+
 # jabakus
 A simple 1*1 Game created just in HTML and Javascript.
 
