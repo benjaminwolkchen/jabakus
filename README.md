@@ -1,5 +1,3 @@
-[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/jabakus/jabakus) 
-
 # jabakus
 A simple 1*1 Game created just in HTML and Javascript.
 
@@ -17,3 +15,6 @@ Jabakus is hosted by Netlify - Netlify Status: [![Netlify Status](https://api.ne
 Made with ❤️ and much ☕ by [Benjamin Hartmann](https://awesomebible.de)
 
 [![Deploys by Netlify](https://www.netlify.com/img/global/badges/netlify-color-bg.svg)](https://www.netlify.com)
+
+
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/jabakus/jabakus) 
