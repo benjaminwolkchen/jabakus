@@ -1,4 +1,4 @@
-if(Vue.$cookies.get("voice") == true){
+
     // Speech
     if (annyang) {
         // Let's define our first command. First the text we expect, and then the function it should call
@@ -54,7 +54,7 @@ if(Vue.$cookies.get("voice") == true){
       
         // Start listening. You can call this here, or attach this call to an event, button, etc.
         annyang.start();
-      }}
+      }
 
 if(annyang !== true && Vue.$cookies.get("voice") == true){
   $('#voiceModal').modal('show')
