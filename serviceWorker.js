@@ -20,8 +20,8 @@ const assets = [
   "game/index.html",
   "game/index.min.js",
   "game/main.min.css",
-  "index.min.js",
-  "main.min.css"
+  "game/index.min.js",
+  "game/main.min.css"
 ]
 
 self.addEventListener("install", installEvent => {
