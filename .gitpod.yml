@@ -1,8 +1,0 @@
-tasks:
-  - init: npm install -g serve
-    command: serve
-
-vscode:
-  extensions:
-    - olback.es6-css-minify@3.3.2:ORws3bhPsYlg9nCVg2CWUg==
-    - rubbersheep.gi@0.2.11:Djah0tmoqyZoVkd+3zffaA==
