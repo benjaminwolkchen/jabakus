@@ -1,5 +1,5 @@
 tasks:
-  - init: npm install --global serve
+  - init: npm install -g serve
     command: serve
 
 vscode:
