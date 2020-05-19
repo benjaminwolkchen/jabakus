@@ -54,3 +54,5 @@ With domain setup, you are on your own.
 
 If your Root/V-Server runs a Windows Version, follow the obove Windows instructions.
 With domain setup, you are on your own.
+
+### If you make modifications that could be useful for everyone, you are welcome to open a [Pull Request](https://github.com/jabakus/jabakus/pulls)
