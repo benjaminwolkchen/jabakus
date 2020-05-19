@@ -7,6 +7,7 @@ A simple 1*1 Game created just in HTML and Javascript.
 
 -> And your ideas: [Issues](https://github.com/jabakus/jabakus-de/issues) and [Pull Requests](https://github.com/jabakus/jabakus-de/pulls) are open!
 
+-> Deploy it in your environment: [Learn more](https://github.com/jabakus/jabakus/blob/master/DEPLOY.md)
 
 Jabakus v4 is created with [vue.js](https://vuejs.org/) and it's a PWA.
 
