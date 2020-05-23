@@ -1,0 +1,49 @@
+// Colors
+$primary: #102B3F; // Blue
+$primary2: #062726; // Green
+$highlight: #E2CFEA; // Pink
+$highlight2: #6247AA; // Lila
+
+
+/* Remove browser default stylings */
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    }
+
+/* Apply own stylings */
+html{
+    background-color: $primary;
+    color: $highlight;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn{
+    background-color: $highlight2;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    border-radius: 25px;
+
+    text-align: center;
+    width: 40%;
+}
+
+
+/* Center all elements with that class */
+.center{
+    text-align: center;
+}
+.footer{
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+}
+
+a{
+    color: $highlight;
+}
