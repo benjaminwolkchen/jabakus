@@ -1,69 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Kontakt</title>
+  <link href='https://fonts.googleapis.com/css?family=Lora|Ubuntu:300,400' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="style.css">
 
-    <title>Kontakt | Jabakus</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></head>
-    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-    <main class="center"><h1 class="title">Kontakt</h1>
-        <br>
-        <br>
-        <br>
-        <br>
-        <form name="contact" method="POST" data-netlify="true" action="/contact/success/index.html">
-          <p>
-            <label>Dein Name: <input type="text" name="name" class="form-control" /></label>   
-          </p>
-          
-          <!-- Please Fill it out -->
-          <p class="hidden">
-            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-          </p>
-          <p>
-          <label>Wieso schreibst du uns? 
-            <select class="form-control" name="messagetype" required>
-              <option>Ich habe einen Fehler gefunden.</option>
-              <option>Ich habe einen Vorschlag.</option>
-              <option>Etwas anderes.</option>
-            </select>
-          </label>
-          </p>
-          <p>
-            <label>Deine Email*: <input type="email" name="email" class="form-control" /></label>
-          </p>
-        
-        
-          <p>
-            <label>Deine Nachricht: <textarea name="message" class="form-control" required></textarea></label><br>
-
-            <button type="submit" class="btn btn-success" class="form-control">Senden!</button>
-          </p>
-        </form>
-        <br>
-        <p>* Wir werden deine Daten niemals verkaufen oder dir Spam schicken,<br> wir behalten deine Email und deine Nachricht nur so lange, <br> wie wir mit dir in Kontakt stehen, und deine Anfrage bearbeiten. <br><br> <b>Danach schreddern wir alles, was wir jemals von dir hatten. Versprochen!</b></p>
-        <p>Außerdem kannst du uns jederzeit um manuelle Datenlöschung oder Auskunft bitten, <br>und wir werden deiner Bitte gerne nachkommen!</p>
-        
-    </main>
-    <br><br><br>
-        <!-- Footer -->
-        <div class="footer center">
-            <p> &copy; <span id="year"></span> <a href="https://wp.me/PbzVMk-q5">Benjamin Wölkchen</a></p>
-                <p> <!-- powered by netlify -->         
-  <a href="https://www.netlify.com">
-    <img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg" alt="Deploys by Netlify" />
-  </a>
-   </p>    
-        </div>
-    
-        <script defer src="/js/copy.min.js"></script> <!-- Copyright -->
-    
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-    </body>
+<!-- partial:index.partial.html -->
+<h1>Kontakt</h1>
+<form 
+action="success/" 
+data-netlify="true" 
+netlify-honeypot="bot-field"
+method="POST" 
+name="contact">
+  <input type="text" name="name" class="question" id="nme" required autocomplete="off" />
+  <label for="nme"><span>Was ist dein Name?</span></label>
+  <textarea name="message" rows="2" class="question" id="msg" required autocomplete="off"></textarea>
+  <label for="msg"><span>Was ist deine Nachricht?</span></label>
+  <p class="hidden">
+    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+  </p>
+  <br>
+  <br>
+  
+  <input type="submit" value="Submit!" ></submit>
+</form>
+<!-- partial -->
+  
+</body>
 </html>
