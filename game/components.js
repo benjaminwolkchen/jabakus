@@ -9,5 +9,9 @@ var vueScoreBoard = new Vue({
 // NOTHING
 
 if(window.location.hash == ""){
-    $('#errorModal').modal('show')
-}
+
+// Simulate a mouse click:
+window.location.href = "https://jabakus.netlify.app";
+
+// Simulate an HTTP redirect:
+window.location.replace("https://jabakus.netlify.app");}

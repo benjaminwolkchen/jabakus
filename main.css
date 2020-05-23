@@ -1,67 +1,42 @@
 /* Remove browser default stylings */
-*{
-    margin:0;
-    padding:0;
-    border:0;
-    }
-
-#text{
-    font-family: 'Roboto', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
-#plus{
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: large;
-    font-family: 'Open Sans', sans-serif;
+/* Apply own stylings */
+html {
+  background-color: #102B3F;
+  color: #E2CFEA;
+  font-family: 'Roboto', sans-serif;
 }
 
-#minus{
-    background-color: #008CBA; /* Blue */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: large;
-    font-family: 'Open Sans', sans-serif;
-}
-
-#dividing{
-    background-color: #555555; /* black */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: large;
-    font-family: 'Open Sans', sans-serif;
-}
-
-#times{
-    background-color: #f44336;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: large;
-    font-family: 'Open Sans', sans-serif;
+.btn {
+  background-color: #6247AA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  border-radius: 25px;
+  text-align: center;
+  width: 40%;
 }
 
 /* Center all elements with that class */
-.center{
-    text-align: center;
+.center {
+  text-align: center;
 }
-.footer{
-    font-family: 'Open Sans', sans-serif;
-    font-size: large;
+
+.footer {
+  font-family: 'Open Sans', sans-serif;
+  font-size: large;
 }
+
+a {
+  color: #E2CFEA;
+}
+/*# sourceMappingURL=main.css.map */

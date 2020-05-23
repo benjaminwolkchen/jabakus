@@ -7,10 +7,8 @@
 
     <link rel="shortcut icon" type="image/png" href="images/icons/icon-512x512.png"/>
     <link rel="shortcut icon" type="image/png" href="https://jabakus.netlify.app/images/icons/icon-512x512.png"/>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.min.css">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
 <body>
     <main class="center">
         <h1 id="text">
@@ -26,17 +24,17 @@
         </div>
         <br>
         <br>
-        <button id="startBtn" v-on:click="start()" class="btn btn-primary">{{ message }}</button>
+        <button id="startBtn" v-on:click="start()" class="btn">{{ message }}</button>
         <br>
         <br>
-        <button id="hardBtn" v-on:click="startHard()" class="btn btn-primary">{{ message }}</button>
-        <br>
-        <br>
-        <br>
+        <button id="hardBtn" v-on:click="startHard()" class="btn">{{ message }}</button>
         <br>
         <br>
         <br>
-        <button id="resetBtn" v-on:click="reset()"class="btn btn-danger">{{ message }}</button>
+        <br>
+        <br>
+        <br>
+        <button id="resetBtn" v-on:click="reset()"class="btn">{{ message }}</button>
         <br>
         <br>
         <div id="scoreboard">
@@ -44,7 +42,7 @@
            {{ scoreboard }}
         </div>
         <br>
-        <button onclick="javascript:history.back(-1)" class="btn btn-primary">Zurück <i class="em em-arrow_backward" aria-role="presentation" aria-label="BLACK LEFT-POINTING TRIANGLE"></i></button>
+        <button onclick="javascript:history.back(-1)" class="btn">Zurück <i class="em em-arrow_backward" aria-role="presentation" aria-label="BLACK LEFT-POINTING TRIANGLE"></i></button>
     </main>
     <br>
     <br>
@@ -55,6 +53,7 @@
     <!-- Footer -->
     <div class="footer center"><p>Made with <i class="em em-heart" aria-role="presentation" aria-label="HEAVY BLACK HEART"></i> and much <i class="em em-coffee" aria-role="presentation" aria-label="HOT BEVERAGE"></i>.</p>
         <p>&copy; <span id="year"></span> <a href="https://wp.me/PbzVMk-q5">Benjamin Wölkchen</a></p>
+        <br>
         <p> <!-- powered by netlify -->         
   <a href="https://www.netlify.com">
     <img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg" alt="Deploys by Netlify" />
@@ -78,56 +77,6 @@
       <script defer src="components.js"></script>
 
     <script defer src="/js/copy.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    
-    
-<!-- Modal -->
-<div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Ups... Das hätte nicht passieren dürfen!</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        Die Rechenart ist in den weiten des Internets verloren gegangen... Gehe zurück um sie zu suchen!
-      </div>
-      <div class="modal-footer">
-        <a type="button" class="btn btn-primary" href="/">Okay</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="voiceModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Du hast Spracheingabe aktiviert...</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>...aber wir konnten dein Mikrofon nicht finden.<br>
-        Wenn du möchtest, kannst du Spracheingabe <a href="/settings">hier</a> ausschalten.</p><br>
-          
-      </div>
-      <div class="modal-footer">
-        <a type="button" class="btn btn-primary" href="/settings">Zu den Einstellungen</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-    <!-- Speech Recognition -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
-    <script src="voice.js"></script>
     <!-- Emoji Magic-->
     <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
 </body>
