@@ -13,9 +13,9 @@
 <!-- partial:index.partial.html -->
 <div id="fullpage">
   <div class="section " id="section0">
-    <h1 class="line-1 anim-typewriter">Sag Hallo! ☺</h1>
-    <p>Schick uns einen handgeschreibenen Brief.</p>
-    <p></p>
+    <h1 class="line-1 anim-typewriter">Say Hello! ☺</h1>
+    <p>Send us an hand written letter to:</p>
+    <p> Insert address here :)</p>
     <div class="arrowDown bounce"></div>
   </div>
   <div class="section" id="section1">
@@ -23,30 +23,100 @@
       <div class="contactform">
         <div class="cfinner">
           <p class="line">
-            <span class="copy">Hallo zufällige Person,</span>
+            <span class="copy">Dear random person,</span>
           </p>
           <p class="line">
-            <form netlify name="contact" method="POST">
-            <span class="copy">Mein Name ist </span>
-            <span class="inputcontainer"><input class="textinput" name="name" value="" required placeholder="Wie heißt du? "></span>
-            <span class="copy">und meine Email-Adresse ist </span>
-            <span class="inputcontainer"><input class="textinput" name="name" value="" placeholder="Deine Emailadresse?"></span>
+            <span class="copy">My name is </span>
+            <span class="inputcontainer"><input class="textinput" name="name" value="" placeholder="type your name "></span>
+            <span class="copy">and my email address is: </span>
+            <span class="inputcontainer"><input class="textinput" name="name" value="" placeholder="type your email id"></span>
             <span class="copy">.</span>
           </p>
           <p class="line">
-            <span class="copy">Warum ich dir schreibe ist &nbsp;<span class="word wisteria">Vorschläge</span><span class="word belize">Beschwerde</span><span class="word pomegranate"> :)</span> </span>
+            <span class="copy">Subject here being a&nbsp;<span class="word wisteria">feedback</span><span class="word belize">complain</span><span class="word pomegranate">whatnot:)</span> </span>
           <br/>
-            <span class="inputcontainer"><input class="longtextinput" name="name" value="" required placeholder="Was willst du mir schreiben?"></span>
+            <span class="inputcontainer"><input class="longtextinput" name="name" value="" placeholder="type your content here"></span>
             <span class="copy">.</span>
           </p>
           <p class="line">
-            <button class="button" type="submit">Senden <i class="fa fa-paper-plane"></i></button>
-          </p></form>
+            <button class="button">Send <i class="fa fa-paper-plane"></i></button>
+          </p>
         </div>
       </div>
     </div>
   </div>
-  
+  <div class="section " id="section2">
+    <div class="feedback">
+      <svg class="fb-emotes-svg" style="display: none;">
+            <symbol id="fb-emote-terrible" data-emote="terrible" viewBox="0 0 100 100">
+                <path class="fb-emote__eye fb-emote__eye--left" d="M32,25 l10,10 a10,10 0 0,1 -20,0 a10,10 0 0,1 10,-10" />
+                <path class="fb-emote__eye fb-emote__eye--right" d="M58,35 l10,-10 a10,10 0 0,1 0,20 a10,10 0 0,1 -10,-10" />
+                <path class="fb-emote__smile" d="M30,68 q20,-13 40,0 M30,68 q20,-13 40,0" />
+            </symbol>
+            <symbol id="fb-emote-bad" data-emote="bad" viewBox="0 0 100 100">
+                <path class="fb-emote__eye fb-emote__eye--left" d="M22,35 l10,-10 a10,10 0 0,1 0,20 a10,10 0 0,1 -10,-10" />
+                <path class="fb-emote__eye fb-emote__eye--right" d="M68,25 l10,10 a10,10 0 0,1 -20,0 a10,10 0 0,1 10,-10" />
+                <path class="fb-emote__smile" d="M30,68 q20,-10 40,0 M30,68 q20,-10 40,0" />
+            </symbol>
+            <symbol id="fb-emote-okay" viewBox="0 0 100 100">
+                <path class="fb-emote__eye fb-emote__eye--left" d="M32,25 a10,10 0 0,1 0,20 a10,10 0 0,1 0,-20" />
+                <path class="fb-emote__eye fb-emote__eye--right" d="M68,25 a10,10 0 0,1 0,20 a10,10 0 0,1 0,-20" />
+                <path class="fb-emote__smile" d="M35,73 q20,-4 35,-8 M35,73 q20,-4 35,-8" />
+            </symbol>
+            <symbol id="fb-emote-good" viewBox="0 0 100 100">
+                <path class="fb-emote__eye fb-emote__eye--left" d="M32,25 a10,10 0 0,1 0,20 a10,10 0 0,1 0,-20" />
+                <path class="fb-emote__eye fb-emote__eye--right" d="M68,25 a10,10 0 0,1 0,20 a10,10 0 0,1 0,-20" />
+                <path class="fb-emote__smile" d="M30,68 q20,10 40,0 M30,68 q20,10 40,0" />
+            </symbol>
+            <symbol id="fb-emote-great" viewBox="0 0 100 100">
+                <path class="fb-emote__eye fb-emote__eye--left" d="M32,25 a10,10 0 0,1 0,20 a10,10 0 0,1 0,-20" />
+                <path class="fb-emote__eye fb-emote__eye--right" d="M68,25 a10,10 0 0,1 0,20 a10,10 0 0,1 0,-20" />
+                <path class="fb-emote__smile" d="M30,68 q20,15 40,0 M30,68 q20,0 40,0" />
+            </symbol>
+        </svg>
+
+      <div class="fb-cont">
+        <div class="fb-heading">How was our service?</div>
+        <div class="fb-cont__inner">
+          <div class="fb-emote" data-emote="terrible">
+            <svg>
+                        <use xlink:href="#fb-emote-terrible" />
+                    </svg>
+            <p class="fb-emote__caption">Terrible</p>
+          </div>
+          <div class="fb-emote" data-emote="bad">
+            <svg>
+                        <use xlink:href="#fb-emote-bad" />
+                    </svg>
+            <p class="fb-emote__caption">Bad</p>
+          </div>
+          <div class="fb-emote s--active" data-emote="okay">
+            <svg>
+                        <use xlink:href="#fb-emote-okay" />
+                    </svg>
+            <p class="fb-emote__caption">Okay</p>
+          </div>
+          <div class="fb-emote" data-emote="good">
+            <svg>
+                        <use xlink:href="#fb-emote-good" />
+                    </svg>
+            <p class="fb-emote__caption">Good</p>
+          </div>
+          <div class="fb-emote" data-emote="great">
+            <svg>
+                        <use xlink:href="#fb-emote-great" />
+                    </svg>
+            <p class="fb-emote__caption">Great</p>
+          </div>
+          <div class="fb-cont__drag-cont">
+            <div class="fb-active-emote">
+              <svg viewBox="0 0 100 100">
+                            <path class="fb-active-emote__eye fb-active-emote__eye--left" d="M32,25 a10,10 0 0,1 0,20 a10,10 0 0,1 0,-20" />
+                            <path class="fb-active-emote__eye fb-active-emote__eye--right" d="M68,25 a10,10 0 0,1 0,20 a10,10 0 0,1 0,-20" />
+                            <path class="fb-active-emote__smile" d="M35,73 q20,-4 35,-8 M35,73 q20,-4 35,-8" />
+                        </svg>
+            </div>
+          </div>
         </div>
       </div>
 
