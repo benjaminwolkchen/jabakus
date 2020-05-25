@@ -1,9 +1,0 @@
-# Netlify Headers File
-/*
-  X-Content-Type-Options: nosniff
-  X-Frame-Options: SAMEORIGIN
-  X-XSS-Protection: 1
-   
-  # HSTS-Header
- Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
-
