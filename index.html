@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Start</title>
+
+        <!-- Import Vue Development Version -->
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
-    <button>
-        {locale.plus}
-    </button>
-    <button>
-        {locale.minus}
-    </button>
-    <button>
-        {locale.dividing}
-    </button>
-    <button>
-        {locale.times}
-    </button>
-    <!-- Import Vue Development Version -->
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="assets/lang/index.js"></script>
+
+    <div id="wow">
+        <button>
+            {{LocaleStrings.plus}}
+        </button>
+        <button>
+            {{localeStrings.minus}}
+        </button>
+        <button>
+            {{localeStrings.dividing}}
+        </button>
+        <button>
+            {{localeStrings.times}}
+        </button>
+    </div>
+    <script src="/assets/lang/index.js"></script>
 </body>
 </html>

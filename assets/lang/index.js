@@ -1,13 +1,15 @@
-const app = new Vue({
-    data:{
-        locale: []
+var app = new Vue({
+    el: '#wow',
+    data: {
+        LocaleStrings: {},
+        url: "https://raw.githubusercontent.com/jabakus/jabakus/rewrite/assets/lang/de.json"
     },
-
-    created() {
-        fetch('https://raw.githubusercontent.com/jabakus/jabakus/rewrite/assets/lang/de.json')
-        .then(response => response.json())
-        .then(json => {
-            this.locale = json.locale
-        })
+    created(){
+        fetch(this.url)
+        .then((resp) => resp.json()) // Transform the data into json
+        .then(function(data) {
+          this.LocaleStrings = data;
+          console.log(this.LocaleStrings)
+          })
     }
-})
+});
