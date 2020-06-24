@@ -55,6 +55,7 @@ if(conf.mode == "plus"){
         el: '#app',
         data: {
             message: "Starte das Spiel",
+            TaskText: "Ich glaube, der Knopf könnte hilfreich sein...",
             UserInput: 0,
         },
         methods:{
@@ -80,6 +81,7 @@ if(conf.mode == "plus"){
         el: '#app',
         data: {
             message: "Starte das Spiel",
+            TaskText: "Ich glaube, der Knopf könnte hilfreich sein...",
             UserInput: 0,
         },
         methods:{
@@ -105,6 +107,7 @@ if(conf.mode == "plus"){
         el: '#app',
         data: {
             message: "Starte das Spiel",
+            TaskText: "Ich glaube, der Knopf könnte hilfreich sein...",
             UserInput: 0,
         },
         methods:{
