@@ -16,8 +16,8 @@
     </section>
     <section class="section">
       <div class="container" id="app">
-        <input class="input is-primary" type="text" placeholder="Text input"><br><br>
-        <button>{{ message }}</button>
+        <input class="input is-primary" type="text" placeholder="Text input" v-model="UserInput"><br><br>
+        <button class="button is-primary is-large" v-on:click="start()" v-on>{{ message }}</button>
       </div>
     </section>
 
