@@ -1,4 +1,4 @@
-var i, ii, iii, ComputerTask, TaskOutput;
+var i, ii, iii, ComputerTask, TaskOutput, beright = false;
 
 function generateTask(){
     i = Math.floor(Math.random() * 11);
@@ -34,9 +34,9 @@ if(conf.mode == "plus"){
         },
         methods:{
             start: function(){
-                if(mainGame.UserInput == ComputerTask){
-                    mainGame.TaskText == "Herzlichen Glückwunsch - du hast die Aufgabe gelöst!"
-                    
+                if(mainGame.UserInput == ComputerTask && beright == false){
+                    mainGame.TaskText = "Herzlichen Glückwunsch - du hast die Aufgabe gelöst!"
+                    beright = true;
                 }else{
 
                 // Change Button Text
@@ -46,6 +46,7 @@ if(conf.mode == "plus"){
                 generateTask();
                 mainGame.TaskText = "Was ergibt "+TaskOutput+"?"
 
+                beright = false;
                 }// End else
             } // END start method
         }
@@ -60,9 +61,9 @@ if(conf.mode == "plus"){
         },
         methods:{
             start: function(){
-                if(mainGame.UserInput == ComputerTask){
-                    mainGame.TaskText == "Herzlichen Glückwunsch - du hast die Aufgabe gelöst!"
-                    
+                if(mainGame.UserInput == ComputerTask && beright == false){
+                    mainGame.TaskText = "Herzlichen Glückwunsch - du hast die Aufgabe gelöst!"
+                    beright = true;
                 }else{
 
                 // Change Button Text
@@ -72,6 +73,7 @@ if(conf.mode == "plus"){
                 generateTask();
                 mainGame.TaskText = "Was ergibt "+TaskOutput+"?"
 
+                beright = false;
                 }// End else
             } // END start method
         }
@@ -86,9 +88,9 @@ if(conf.mode == "plus"){
         },
         methods:{
             start: function(){
-                if(mainGame.UserInput == ComputerTask){
-                    mainGame.TaskText == "Herzlichen Glückwunsch - du hast die Aufgabe gelöst!"
-                    
+                if(mainGame.UserInput == ComputerTask && beright == false){
+                    mainGame.TaskText = "Herzlichen Glückwunsch - du hast die Aufgabe gelöst!"
+                    beright = true;
                 }else{
 
                 // Change Button Text
@@ -98,6 +100,7 @@ if(conf.mode == "plus"){
                 generateTask();
                 mainGame.TaskText = "Was ergibt "+TaskOutput+"?"
 
+                beright = false;
                 }// End else
             } // END start method
         }
@@ -112,9 +115,9 @@ if(conf.mode == "plus"){
         },
         methods:{
             start: function(){
-                if(mainGame.UserInput == ComputerTask){
-                    mainGame.TaskText == "Herzlichen Glückwunsch - du hast die Aufgabe gelöst!"
-                    
+                if(mainGame.UserInput == ComputerTask && beright == false){
+                    mainGame.TaskText = "Herzlichen Glückwunsch - du hast die Aufgabe gelöst!"
+                    beright = true;
                 }else{
 
                 // Change Button Text
@@ -124,6 +127,7 @@ if(conf.mode == "plus"){
                 generateTask();
                 mainGame.TaskText = "Was ergibt "+TaskOutput+"?"
 
+                beright = false;
                 }// End else
             } // END start method
         }
