@@ -11,11 +11,11 @@ function generateTask(){
     }else 
     if(conf.mode == "minus"){
         ComputerTask = i + ii;
-        TaskOutput = i+" + "+ii;
+        TaskOutput = i+" - "+ii;
     }else 
     if(conf.mode == "times"){
         ComputerTask = i + ii;
-        TaskOutput = i+" + "+ii;
+        TaskOutput = i+" × "+ii;
     }else 
     if(conf.mode == "dividing"){
         iii = i * ii;
