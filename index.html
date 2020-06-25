@@ -1,73 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jabakus</title>
 
-    <link rel="shortcut icon" type="image/png" href="/images/icons/icon-512x512.png"/>
-    <link rel="shortcut icon" type="image/png" href="https://jabakus.netlify.app/images/icons/icon-512x512.png"/>
-    <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet"> 
-
-    <!-- PWA -->
-    <link rel="manifest" href="manifest.json" />
-<!-- ios support -->
-<link rel="apple-touch-icon" href="images/icons/icon-72x72.png" />
-<link rel="apple-touch-icon" href="images/icons/icon-96x96.png" />
-<link rel="apple-touch-icon" href="images/icons/icon-128x128.png" />
-<link rel="apple-touch-icon" href="images/icons/icon-144x144.png" />
-<link rel="apple-touch-icon" href="images/icons/icon-152x152.png" />
-<link rel="apple-touch-icon" href="images/icons/icon-192x192.png" />
-<link rel="apple-touch-icon" href="images/icons/icon-384x384.png" />
-<link rel="apple-touch-icon" href="images/icons/icon-512x512.png" />
-<meta name="apple-mobile-web-app-status-bar" content="#db4938" />
-<meta name="theme-color" content="#db4938" />
-
-<script src="https://kit.fontawesome.com/d2ea616ed9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/assets/css/bulma@0.9.0/bulma.min.css">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" type="image/png" href="/favicon.png">
 </head>
-<body>
-    <main class="center" id="something">
-        <h1 id="text">
-            Wähle eine Rechenart!
-            <br>
-        </h1>
-        <br>
-        <br>
-        <br>
-        <br>
-        <a id="plus" class="btn" href="game/#plus">Plus <i class="fas fa-plus"></i></a>
-        <br>
-        <br>
-        <a id="minus" class="btn" href="game/#minus">Minus <i class="fas fa-minus"></i></a>
-        <br>
-        <br>
-        <a id="times" class="btn" href="game/#times">Mal <i class="fas fa-asterisk"></i></i></a>
-        <br>
-        <br>
-        <a id="dividing" class="btn" href="game/#dividing">Geteilt <i class="fas fa-divide"></i></a>
-        <br>
-        <br>
-        <a href="contact/" class="btn">Kontakt <i class="fas fa-envelope"></i></a>
-    </main>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <!-- Footer -->
-    <div class="footer center"><p>Made with <i class="fas fa-heart"></i> and much <i class="fas fa-coffee"></i>.</p>
-        <p> &copy; <span id="year"></span> <a href="https://wp.me/PbzVMk-q5">Benjamin Wölkchen</a></p>
-    <br>
-    <p> <!-- powered by netlify -->         
-  <a href="https://www.netlify.com">
-    <img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg" alt="Deploys by Netlify" />
-  </a>
-   </p></div>
-
-    <!-- PWA Magic -->
-    
-    <script src="js/app.min.js"></script> <!--PWA--> 
-    <script defer src="/js/copy.min.js"></script> <!-- Copyright -->
-</body>
+  <body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Jabakus
+      </h1>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+        
+        <a href="/game/m/" class="button is-primary is-large">Minus</a><br><br>
+        <a href="/game/t/" class="button is-primary is-large">Mal</a><br><br>
+        <a href="/game/d/" class="button is-primary is-large">Geteilt</a><br><br>
+        <a href="/game/p/" class="button is-primary is-large">Plus</a><br><br>   
+    </div>
+  </section>
+  </body>
 </html>
