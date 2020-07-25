@@ -1,5 +1,0 @@
-# Netlify Redirects
-/kontakt    /contact
-/contact    https://awesomebible.de
-/about  https://awesomebible.de
-/license https://github.com/jabakus/jabakus/blob/master/LICENSE
