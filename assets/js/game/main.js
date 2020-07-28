@@ -37,17 +37,19 @@ if(conf.mode == "plus"){
                 if(mainGame.UserInput == ComputerTask && beright == false){
                     mainGame.TaskText = "Herzlichen Glückwunsch - du hast die Aufgabe gelöst!"
                     beright = true;
+                }else if(mainGame.UserInput && mainGame.UserInput !== ComputerTask && beright == false){
+                    mainGame.TaskText = "Du hast die Aufgabe leider nicht richtig gelöst. Die richtige Lösung wäre: "+ComputerTask+"."
+                    beright = true;
                 }else{
-
-                // Change Button Text
-                mainGame.message = "Nächste Aufgabe";
-                mainGame.TaskText = "";
-
-                generateTask();
-                mainGame.TaskText = "Was ergibt "+TaskOutput+"?"
-
-                beright = false;
-                }// End else
+                    // Change Button Text
+                    mainGame.message = "Nächste Aufgabe";
+                    mainGame.TaskText = "";
+    
+                    generateTask();
+                    mainGame.TaskText = "Was ergibt "+TaskOutput+"?"
+    
+                    beright = false;
+                    }// End else
             } // END start method
         }
     })
@@ -63,6 +65,9 @@ if(conf.mode == "plus"){
             start: function(){
                 if(mainGame.UserInput == ComputerTask && beright == false){
                     mainGame.TaskText = "Herzlichen Glückwunsch - du hast die Aufgabe gelöst!"
+                    beright = true;
+                }else if(mainGame.UserInput && mainGame.UserInput !== ComputerTask && beright == false){
+                    mainGame.TaskText = "Du hast die Aufgabe leider nicht richtig gelöst. Die richtige Lösung wäre: "+ComputerTask+"."
                     beright = true;
                 }else{
 
@@ -91,6 +96,9 @@ if(conf.mode == "plus"){
                 if(mainGame.UserInput == ComputerTask && beright == false){
                     mainGame.TaskText = "Herzlichen Glückwunsch - du hast die Aufgabe gelöst!"
                     beright = true;
+                }else if(mainGame.UserInput && mainGame.UserInput !== ComputerTask && beright == false){
+                    mainGame.TaskText = "Du hast die Aufgabe leider nicht richtig gelöst. Die richtige Lösung wäre: "+ComputerTask+"."
+                    beright = true;
                 }else{
 
                 // Change Button Text
@@ -117,6 +125,9 @@ if(conf.mode == "plus"){
             start: function(){
                 if(mainGame.UserInput == ComputerTask && beright == false){
                     mainGame.TaskText = "Herzlichen Glückwunsch - du hast die Aufgabe gelöst!"
+                    beright = true;
+                }else if(mainGame.UserInput && mainGame.UserInput !== ComputerTask && beright == false){
+                    mainGame.TaskText = "Du hast die Aufgabe leider nicht richtig gelöst. Die richtige Lösung wäre: "+ComputerTask+"."
                     beright = true;
                 }else{
 
