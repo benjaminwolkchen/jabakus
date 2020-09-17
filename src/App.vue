@@ -1,15 +1,16 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <MainMenu emoji="🐼"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import './assets/css/base.css'
+import MainMenu from './components/MainMenu.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MainMenu
   }
 }
 </script>
