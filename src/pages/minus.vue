@@ -1,0 +1,14 @@
+<template>
+<h1 class="title is-1">Jabakus</h1>
+<br>
+<h2>Minus</h2>
+</template>
+
+<script>
+export default {
+  name: 'MainMenu',
+  props: {
+    emoji: String
+  }
+}
+</script>
