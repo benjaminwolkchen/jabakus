@@ -1,22 +1,8 @@
 <template>
-  <router-view />
+  Minus
 </template>
 
 <style lang="scss">
-body,
-html {
-  padding-top: 20px;
-}
-a {
-  background: #2c3e50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
