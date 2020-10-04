@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <h1>{{title}}</h1>
-    <input type="text" name="" id="input" v-model="UserInput"/><br /><br />
+    <h1>{{ title }}</h1>
+    <input type="text" name="" id="input" v-model="UserInput" /><br /><br />
     <button v-on:click="game">Senden!</button>
   </div>
 </template>
@@ -44,15 +44,16 @@ export default {
   el: "#app",
   data() {
     return {
-      title: 'Minus',
+      title: "Minus",
       UserInput: null
     };
   },
   methods: {
     game() {
-      if(this.UserInput == null){
-            var i = Math.floor(Math.random() * 11), ii = Math.floor(Math.random() * 11);
-            this.title = "Was ist "+i+" - "+ii;
+      if (this.UserInput == null) {
+        var i = Math.floor(Math.random() * 11),
+          ii = Math.floor(Math.random() * 11);
+        this.title = "Was ist " + i + " - " + ii;
       }
     }
   }
