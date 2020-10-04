@@ -1,5 +1,9 @@
 <template>
-  Plus
+  <h1>Plus</h1>
+  <div id="app">
+    <input type="text" name="" id="input"><br><br>
+    <button type="submit" id="submit">Senden!</button>
+  </div>
 </template>
 
 <style lang="scss">
@@ -23,4 +27,30 @@
     }
   }
 }
+button{
+  background: #2c3e50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
 </style>
+<script>
+    export default {
+        name: "ListItemsSfc",
+        props: ['items'],
+        data() {
+            return {
+                UserSolulution: null
+            }
+        },
+        methods: {
+            game() {
+                alert(0)
+            }
+        }
+    }
+</script>
