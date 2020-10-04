@@ -8,3 +8,9 @@
 
   # Default build command.
   command = "npm run build"
+
+# Redirect to prevent 404 error
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
