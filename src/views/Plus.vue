@@ -1,8 +1,8 @@
 <template>
-  <h1>Plus</h1>
   <div id="app">
-    <input type="text" name="" id="input"><br><br>
-    <button type="submit" id="submit">Senden!</button>
+    <h1>{{title}}</h1>
+    <input type="text" name="" id="input" v-model="UserInput"/><br /><br />
+    <button v-on:click="game">Senden!</button>
   </div>
 </template>
 
@@ -27,7 +27,7 @@
     }
   }
 }
-button{
+button {
   background: #2c3e50;
   border: none;
   color: white;
@@ -39,18 +39,22 @@ button{
 }
 </style>
 <script>
-    export default {
-        name: "ListItemsSfc",
-        props: ['items'],
-        data() {
-            return {
-                UserSolulution: null
-            }
-        },
-        methods: {
-            game() {
-                alert(0)
-            }
-        }
+export default {
+  name: "App",
+  el: "#app",
+  data() {
+    return {
+      title: 'Plus',
+      UserInput: null
+    };
+  },
+  methods: {
+    game() {
+      if(this.UserInput == null){
+            var i = Math.floor(Math.random() * 11), ii = Math.floor(Math.random() * 11);
+            this.title = "Was ist "+i+" + "+ii;
+      }
     }
+  }
+};
 </script>

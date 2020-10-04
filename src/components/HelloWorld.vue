@@ -2,9 +2,9 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <router-link to="/plus">Plus</router-link> <br /><br />
-    <router-link to="/plus">Minus</router-link> <br /><br />
-    <router-link to="/plus">Mal</router-link> <br /><br />
-    <router-link to="/plus">Geteilt</router-link> <br /><br />
+    <router-link to="/minus">Minus</router-link> <br /><br />
+    <router-link to="/times">Mal</router-link> <br /><br />
+    <router-link to="/dividing">Geteilt</router-link> <br /><br />
   </div>
 </template>
 

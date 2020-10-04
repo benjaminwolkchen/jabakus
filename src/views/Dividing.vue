@@ -1,5 +1,9 @@
 <template>
-  Divding
+  <div id="app">
+    <h1>{{title}}</h1>
+    <input type="text" name="" id="input" v-model="UserInput"/><br /><br />
+    <button v-on:click="game">Senden!</button>
+  </div>
 </template>
 
 <style lang="scss">
@@ -23,4 +27,34 @@
     }
   }
 }
+button {
+  background: #2c3e50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
 </style>
+<script>
+export default {
+  name: "App",
+  el: "#app",
+  data() {
+    return {
+      title: 'Geteilt',
+      UserInput: null
+    };
+  },
+  methods: {
+    game() {
+      if(this.UserInput == null){
+            var i = Math.floor(Math.random() * 11), ii = Math.floor(Math.random() * 11);
+            this.title = "Was ist "+i+" ÷ "+ii;
+      }
+    }
+  }
+};
+</script>
