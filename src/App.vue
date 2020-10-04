@@ -1,21 +1,19 @@
 <template>
   <router-view />
+  <br />
+  <br />
+  <a href="https://www.netlify.com">
+    <img
+      src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg"
+      alt="Deploys by Netlify"
+    />
+  </a>
 </template>
 
 <style lang="scss">
 body,
 html {
   padding-top: 20px;
-}
-a {
-  background: #2c3e50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
