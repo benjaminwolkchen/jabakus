@@ -5,6 +5,9 @@
   <a href="https://www.netlify.com">
     <img src="./assets/netlify-color-bg.svg" alt="Deploys by Netlify" />
   </a>
+  <br />
+  <br />
+  <a href="https://awesomebible.de">&copy; {{ year }} Benjamin Hartmann</a>
 </template>
 
 <style lang="scss">
@@ -33,3 +36,14 @@ html {
   }
 }
 </style>
+<script>
+export default {
+  name: "App",
+  el: "#app",
+  data() {
+    return {
+      year: new Date().getFullYear()
+    };
+  }
+};
+</script>
