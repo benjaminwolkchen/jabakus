@@ -1,7 +1,7 @@
 <template>
   <img alt="Vue logo" src="../assets/logo.png" class="logo" />
   <div id="app">
-    <h1>Oops! Ich konnte die Seite leider nicht finden!</h1>
+    <h1>Oops! Wir konnten die Seite leider nicht finden!</h1>
     <br /><br />
 
     <img v-bind:src="selectedImage" /> <br /><br />
