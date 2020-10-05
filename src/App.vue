@@ -7,7 +7,7 @@
   </a>
   <br />
   <br />
-  <a href="https://awesomebible.de">&copy; {{ year }} Benjamin Hartmann</a>
+  <a href="https://awesomebible.de" rel="me">&copy; {{ year }} Benjamin Hartmann</a>
 </template>
 
 <style lang="scss">
