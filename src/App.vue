@@ -2,6 +2,7 @@
   <router-view />
   <br />
   <br />
+  <div id="footer">
   <a href="https://www.netlify.com">
     <img src="./assets/netlify-color-bg.svg" alt="Deploys by Netlify" />
   </a>
@@ -10,6 +11,7 @@
   <a href="https://awesomebible.de" rel="me"
     >&copy; {{ year }} Benjamin Hartmann</a
   >
+  </div>
 </template>
 
 <style lang="scss">
@@ -36,6 +38,13 @@ html {
       color: white;
     }
   }
+}
+#footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 </style>
 <script>
