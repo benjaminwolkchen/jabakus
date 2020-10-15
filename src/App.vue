@@ -12,6 +12,12 @@
     >&copy; {{ year }} Benjamin Hartmann</a
   >
   </div>
+
+<audio id="audioplayer-win">
+  <source src="./assets/win_sound_1.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+
 </template>
 
 <style lang="scss">
@@ -57,4 +63,14 @@ export default {
     };
   }
 };
+
+var x = document.getElementById("audioplayer-win"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
 </script>
