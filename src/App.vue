@@ -64,7 +64,7 @@ export default {
   }
 };
 
-var x = document.getElementById("audioplayer-win"); 
+/*var x = document.getElementById("audioplayer-win"); 
 
 function playAudio() { 
   x.play(); 
@@ -72,5 +72,5 @@ function playAudio() {
 
 function pauseAudio() { 
   x.pause(); 
-} 
+}*/
 </script>
