@@ -53,7 +53,7 @@ var i,
 function generateTask() {
   i = Math.floor(Math.random() * 11);
   ii = Math.floor(Math.random() * 11);
-  ComputerTask = i + ii;
+  ComputerTask = i * ii;
   TaskOutput = i + " × " + ii;
 }
 
