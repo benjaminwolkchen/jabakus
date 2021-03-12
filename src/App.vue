@@ -3,9 +3,6 @@
   <br />
   <br />
   <div id="footer">
-    <a href="https://www.netlify.com">
-      <img src="./assets/netlify-color-bg.svg" alt="Deploys by Netlify" />
-    </a>
     <br />
     <br />
     <a href="https://awesomebible.de" rel="me"
@@ -20,7 +17,7 @@ html {
   padding-top: 20px;
 }
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -57,14 +54,4 @@ export default {
     };
   }
 };
-
-/*var x = document.getElementById("audioplayer-win"); 
-
-function playAudio() { 
-  x.play(); 
-} 
-
-function pauseAudio() { 
-  x.pause(); 
-}*/
 </script>
