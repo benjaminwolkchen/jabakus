@@ -12,5 +12,6 @@
 # Redirect to prevent 404 error
 [[redirects]]
   from = "/*"
-  to = "/index.html"
-  status = 200
+  to = "https://jabakus.pages.dev/"
+  status = 301
+  force = true
