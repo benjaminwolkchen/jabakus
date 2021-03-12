@@ -12,6 +12,19 @@
 </template>
 
 <style lang="scss">
+/* inter-regular - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/inter-v3-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('/fonts/inter-v3-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/inter-v3-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/inter-v3-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/inter-v3-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/inter-v3-latin-regular.svg#Inter') format('svg'); /* Legacy iOS */
+}
 body,
 html {
   padding-top: 20px;
